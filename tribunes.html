@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Tribunes d'experts — Neybras Magazine</title>
+<meta name="description" content="Tribunes libres d'avocats, juristes et experts — analyses indépendantes sur le droit des affaires, la finance et l'arbitrage au Maroc et en Afrique."/>
+<meta name="robots" content="index,follow"/>
+<link rel="canonical" href="https://www.neybras.ma/tribunes"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<style>
+:root{--bn:#0f1e36;--bn2:#0a1528;--bn3:#1a3355;--or:#b8922e;--or-lt:#d4a94a;--or-bg:rgba(184,146,46,.08);--or-bd:rgba(184,146,46,.22);--page:#fafafa;--blanc:#ffffff;--gris1:#1a1a1a;--gris2:#2d2d2d;--gris3:#555555;--gris4:#888888;--gris5:#bbbbbb;--brd:#e4e4e4;--brd2:#f0f0f0;--cg:'Cormorant Garamond','Georgia',serif;--pd:'Playfair Display','Georgia',serif;--it:'Inter','Helvetica Neue',sans-serif;--tr:all .22s ease;}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;font-size:16px;}
+body{font-family:var(--it);background:var(--page);color:var(--gris1);-webkit-font-smoothing:antialiased;}
+a{text-decoration:none;color:inherit;transition:var(--tr);}
+img{max-width:100%;height:auto;display:block;}
+ul{list-style:none;}
+.container{max-width:1240px;margin:0 auto;padding:0 32px;}
+/* top-bar */
+.top-bar{background:var(--bn2);border-bottom:1px solid rgba(255,255,255,.06);padding:6px 0;}
+.tb-in{display:flex;justify-content:space-between;align-items:center;}
+.tb-l{display:flex;align-items:center;gap:16px;font-size:10px;color:rgba(255,255,255,.32);letter-spacing:.05em;}
+.tb-date{color:rgba(184,146,46,.8);font-weight:500;}
+.tb-r{display:flex;align-items:center;gap:16px;}
+.tb-soc{display:flex;gap:12px;}
+.tb-soc a{color:rgba(255,255,255,.28);font-size:11px;}
+.tb-soc a:hover{color:var(--or-lt);}
+.tb-lnk{display:flex;gap:16px;}
+.tb-lnk a{font-size:10px;color:rgba(255,255,255,.3);letter-spacing:.07em;text-transform:uppercase;}
+.tb-lnk a:hover{color:rgba(255,255,255,.65);}
+/* header */
+.site-header{background:var(--bn);position:sticky;top:0;z-index:1000;border-bottom:1px solid rgba(255,255,255,.07);}
+.hd-in{display:flex;align-items:center;justify-content:space-between;padding:10px 0;}
+.logo-wrap{display:flex;align-items:center;gap:12px;}
+.logo-txt{display:flex;flex-direction:column;}
+.logo-name{font-family:var(--it);font-size:16px;font-weight:700;letter-spacing:.2em;color:#fff;text-transform:uppercase;line-height:1;}
+.logo-tag{font-family:var(--cg);font-style:italic;font-size:10.5px;color:rgba(184,146,46,.75);letter-spacing:.05em;margin-top:2px;}
+.hd-act{display:flex;align-items:center;gap:14px;}
+.btn-srch{background:none;border:none;color:rgba(255,255,255,.4);font-size:14px;cursor:pointer;padding:6px;transition:var(--tr);}
+.btn-srch:hover{color:rgba(255,255,255,.85);}
+.btn-abo{border:1px solid rgba(255,255,255,.28);color:rgba(255,255,255,.72);font-size:9.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:8px 18px;border-radius:1px;background:transparent;transition:var(--tr);}
+.btn-abo:hover{border-color:var(--or-lt);color:var(--or-lt);}
+/* nav */
+.main-nav{background:var(--bn);border-bottom:1px solid rgba(184,146,46,.3);}
+.nav-in{display:flex;overflow-x:auto;scrollbar-width:none;}
+.nav-in::-webkit-scrollbar{display:none;}
+.nav-a{display:block;font-size:9.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.42);padding:10px 15px;white-space:nowrap;border-bottom:2px solid transparent;margin-bottom:-1px;transition:var(--tr);}
+.nav-a:hover{color:rgba(255,255,255,.82);}
+.nav-a.on{color:#fff;border-bottom-color:var(--or);}
+.nav-a.star{color:rgba(184,146,46,.8);}
+.nav-a.star.on{color:var(--or-lt);border-bottom-color:var(--or-lt);}
+/* hero */
+.sec-hero{background:var(--bn);padding:52px 0 44px;border-bottom:3px solid var(--or);}
+.sec-hero-inner{display:flex;flex-direction:column;align-items:center;text-align:center;}
+.sec-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:9px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--or);margin-bottom:18px;}
+.sec-eyebrow::before,.sec-eyebrow::after{content:'';display:block;width:28px;height:1px;background:var(--or);opacity:.5;}
+.sec-hero h1{font-family:var(--pd);font-size:clamp(2rem,4vw,3.2rem);font-weight:900;color:#fff;line-height:1.1;margin-bottom:14px;letter-spacing:-.01em;}
+.sec-hero-desc{font-size:14px;color:rgba(255,255,255,.5);max-width:560px;line-height:1.7;}
+/* filter tabs */
+.filter-bar{background:var(--blanc);border-bottom:1px solid var(--brd);padding:0 0;position:sticky;top:65px;z-index:900;}
+.filter-in{display:flex;gap:0;overflow-x:auto;scrollbar-width:none;}
+.filter-in::-webkit-scrollbar{display:none;}
+.ftab{font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gris4);padding:14px 20px;white-space:nowrap;border-bottom:2px solid transparent;cursor:pointer;transition:var(--tr);background:none;border-top:none;border-left:none;border-right:none;}
+.ftab:hover{color:var(--gris2);}
+.ftab.active{color:var(--bn);border-bottom-color:var(--or);}
+/* layout */
+.sec-layout{display:grid;grid-template-columns:1fr 292px;gap:48px;padding:48px 0 64px;}
+/* featured tribune */
+.feat-trib{background:var(--blanc);border:1px solid var(--brd);overflow:hidden;}
+.feat-trib-img{position:relative;height:380px;overflow:hidden;background:var(--bn);}
+.feat-trib-img img{width:100%;height:100%;object-fit:cover;opacity:.82;}
+.feat-trib-img::after{content:'';position:absolute;bottom:0;left:0;right:0;height:55%;background:linear-gradient(transparent,rgba(10,21,40,.92));}
+.feat-trib-badge{position:absolute;top:20px;left:20px;z-index:2;font-size:9px;font-weight:700;letter-spacing:.15em;text-transform:uppercase;padding:5px 11px;background:var(--or);color:var(--bn);border-radius:1px;}
+.feat-trib-overlay{position:absolute;bottom:0;left:0;right:0;z-index:2;padding:28px 32px;}
+.feat-trib-overlay .author-chip{display:inline-flex;align-items:center;gap:8px;margin-bottom:12px;}
+.feat-trib-overlay .author-chip img{width:34px;height:34px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.25);}
+.feat-trib-overlay .author-chip span{font-size:11px;font-weight:600;color:rgba(255,255,255,.9);}
+.feat-trib-overlay h2{font-family:var(--pd);font-size:1.75rem;font-weight:700;color:#fff;line-height:1.2;margin-bottom:10px;}
+.feat-trib-overlay p{font-size:13px;color:rgba(255,255,255,.65);line-height:1.6;margin-bottom:18px;}
+.feat-trib-overlay .btn-read{display:inline-flex;align-items:center;gap:8px;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--or);transition:var(--tr);}
+.feat-trib-overlay .btn-read i{font-size:9px;transition:var(--tr);}
+.feat-trib-overlay .btn-read:hover{color:var(--or-lt);}
+.feat-trib-overlay .btn-read:hover i{transform:translateX(4px);}
+/* tribune grid */
+.trib-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:32px;}
+.tcard{background:var(--blanc);border:1px solid var(--brd);overflow:hidden;display:flex;flex-direction:column;}
+.tcard-img{position:relative;height:190px;overflow:hidden;background:var(--bn);}
+.tcard-img img{width:100%;height:100%;object-fit:cover;opacity:.85;transition:transform .4s ease;}
+.tcard:hover .tcard-img img{transform:scale(1.04);}
+.tcard-badge{position:absolute;top:12px;left:12px;font-size:8.5px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:4px 9px;border-radius:1px;}
+.badge-trib{background:var(--or);color:var(--bn);}
+.badge-itw{background:var(--bn);color:#fff;border:1px solid rgba(255,255,255,.15);}
+.badge-droit{background:#1e4a7a;color:#fff;}
+.badge-finance{background:#1a5c3a;color:#fff;}
+.badge-arbitrage{background:#4a1a5c;color:#fff;}
+.badge-afrique{background:#7a3a1a;color:#fff;}
+.tcard-body{padding:20px 22px;flex:1;display:flex;flex-direction:column;}
+.tcard-author{display:flex;align-items:center;gap:8px;margin-bottom:12px;}
+.tcard-author img{width:30px;height:30px;border-radius:50%;object-fit:cover;border:1px solid var(--brd);}
+.tcard-author-info{display:flex;flex-direction:column;}
+.tcard-author-name{font-size:11px;font-weight:600;color:var(--gris1);}
+.tcard-author-role{font-size:10px;color:var(--gris4);}
+.tcard-body h3{font-family:var(--pd);font-size:1.05rem;font-weight:700;color:var(--gris1);line-height:1.3;margin-bottom:8px;}
+.tcard-quote{font-size:12.5px;color:var(--gris3);line-height:1.6;flex:1;font-style:italic;border-left:3px solid var(--or-bd);padding-left:12px;margin-bottom:14px;}
+.tcard-foot{display:flex;align-items:center;justify-content:space-between;padding-top:14px;border-top:1px solid var(--brd2);}
+.tcard-date{font-size:10px;color:var(--gris5);}
+.tcard-read{font-size:10px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--or);display:flex;align-items:center;gap:6px;}
+.tcard-read i{font-size:9px;transition:transform .2s;}
+.tcard:hover .tcard-read i{transform:translateX(3px);}
+/* quote highlight */
+.quote-pullout{background:var(--bn);padding:36px 40px;margin:32px 0;position:relative;overflow:hidden;}
+.quote-pullout::before{content:'\201C';position:absolute;top:-10px;left:20px;font-size:120px;font-family:var(--pd);color:rgba(184,146,46,.12);line-height:1;}
+.quote-pullout blockquote{font-family:var(--cg);font-size:1.35rem;font-style:italic;color:rgba(255,255,255,.88);line-height:1.5;position:relative;z-index:1;}
+.quote-pullout cite{display:block;margin-top:14px;font-size:11px;font-style:normal;color:var(--or);letter-spacing:.08em;}
+/* tribute list */
+.trib-list{margin-top:40px;}
+.trib-list-header{display:flex;align-items:center;gap:12px;margin-bottom:20px;}
+.trib-list-header h2{font-family:var(--pd);font-size:1.25rem;font-weight:700;color:var(--gris1);}
+.trib-list-header .line{flex:1;height:1px;background:var(--brd);}
+.tlist-item{display:flex;gap:20px;padding:22px 0;border-bottom:1px solid var(--brd2);align-items:flex-start;}
+.tlist-item:first-child{border-top:1px solid var(--brd2);}
+.tlist-num{font-family:var(--pd);font-size:2rem;font-weight:900;color:rgba(184,146,46,.18);line-height:1;flex-shrink:0;width:36px;text-align:right;}
+.tlist-body{flex:1;}
+.tlist-meta{display:flex;align-items:center;gap:8px;margin-bottom:6px;}
+.tlist-author-img{width:28px;height:28px;border-radius:50%;object-fit:cover;border:1px solid var(--brd);}
+.tlist-author{font-size:10.5px;font-weight:600;color:var(--gris2);}
+.tlist-dot{color:var(--gris5);font-size:8px;}
+.tlist-cat{font-size:9.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--or);}
+.tlist-body h3{font-family:var(--pd);font-size:1.05rem;font-weight:700;color:var(--gris1);line-height:1.3;margin-bottom:5px;}
+.tlist-body h3 a:hover{color:var(--or);}
+.tlist-excerpt{font-size:12.5px;color:var(--gris3);line-height:1.6;margin-bottom:10px;}
+.tlist-foot{display:flex;align-items:center;gap:12px;}
+.tlist-date{font-size:10px;color:var(--gris5);}
+.tlist-read-link{font-size:10px;font-weight:600;color:var(--or);letter-spacing:.08em;}
+.tlist-read-link:hover{color:var(--or-lt);}
+/* sidebar */
+aside{display:flex;flex-direction:column;gap:28px;}
+.sw{background:var(--blanc);border:1px solid var(--brd);padding:24px;}
+.sw-title{font-size:9.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--gris4);margin-bottom:18px;padding-bottom:12px;border-bottom:1px solid var(--brd2);}
+/* most read */
+.mr-item{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--brd2);align-items:flex-start;}
+.mr-item:last-child{border-bottom:none;padding-bottom:0;}
+.mr-num{font-family:var(--pd);font-size:1.5rem;font-weight:900;color:rgba(184,146,46,.22);line-height:1;flex-shrink:0;width:24px;}
+.mr-info{flex:1;}
+.mr-info h4{font-family:var(--pd);font-size:.88rem;font-weight:700;color:var(--gris1);line-height:1.3;margin-bottom:3px;}
+.mr-info h4 a:hover{color:var(--or);}
+.mr-info span{font-size:10px;color:var(--gris5);}
+/* experts */
+.exp-item{display:flex;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--brd2);}
+.exp-item:last-child{border-bottom:none;padding-bottom:0;}
+.exp-av{width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid var(--or-bd);flex-shrink:0;}
+.exp-info{flex:1;}
+.exp-name{font-size:12px;font-weight:600;color:var(--gris1);}
+.exp-role{font-size:10px;color:var(--gris4);margin-top:1px;}
+.exp-count{font-size:9.5px;font-weight:600;color:var(--or);}
+/* newsletter */
+.nl-desc{font-size:12px;color:var(--gris3);line-height:1.6;margin-bottom:16px;}
+.nl-form{display:flex;flex-direction:column;gap:8px;}
+.nl-input{width:100%;padding:10px 14px;border:1px solid var(--brd);font-size:12px;font-family:var(--it);background:var(--page);color:var(--gris1);outline:none;transition:var(--tr);}
+.nl-input:focus{border-color:var(--or);}
+.nl-btn{background:var(--or);color:var(--bn);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:11px;border:none;cursor:pointer;transition:var(--tr);}
+.nl-btn:hover{background:var(--or-lt);}
+/* propose */
+.prop-box{background:var(--bn);padding:24px;}
+.prop-box-title{font-family:var(--pd);font-size:1rem;font-weight:700;color:#fff;margin-bottom:8px;}
+.prop-box-desc{font-size:12px;color:rgba(255,255,255,.55);line-height:1.6;margin-bottom:18px;}
+.prop-btn{display:block;text-align:center;background:transparent;border:1px solid rgba(184,146,46,.45);color:var(--or);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:12px;transition:var(--tr);}
+.prop-btn:hover{background:var(--or);color:var(--bn);}
+/* tags */
+.tags{display:flex;flex-wrap:wrap;gap:8px;}
+.tag{font-size:10px;font-weight:500;color:var(--gris3);padding:5px 11px;border:1px solid var(--brd);background:var(--blanc);cursor:pointer;transition:var(--tr);}
+.tag:hover{border-color:var(--or);color:var(--or);}
+/* footer */
+footer{background:var(--bn2);border-top:3px solid rgba(184,146,46,.3);padding:48px 0 28px;}
+.ft-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px;}
+.ft-brand .logo-name{font-size:14px;margin-bottom:6px;}
+.ft-brand .logo-tag{font-size:10px;margin-bottom:14px;}
+.ft-desc{font-size:11.5px;color:rgba(255,255,255,.38);line-height:1.7;margin-bottom:16px;}
+.ft-soc{display:flex;gap:12px;}
+.ft-soc a{width:30px;height:30px;border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.3);font-size:11px;transition:var(--tr);}
+.ft-soc a:hover{border-color:var(--or);color:var(--or);}
+.ft-col-title{font-size:9px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(184,146,46,.7);margin-bottom:16px;}
+.ft-links{display:flex;flex-direction:column;gap:9px;}
+.ft-links a{font-size:11.5px;color:rgba(255,255,255,.35);transition:var(--tr);}
+.ft-links a:hover{color:rgba(255,255,255,.72);}
+.ft-bottom{border-top:1px solid rgba(255,255,255,.07);padding-top:22px;display:flex;justify-content:space-between;align-items:center;}
+.ft-copy{font-size:10px;color:rgba(255,255,255,.22);}
+.ft-legal{display:flex;gap:20px;}
+.ft-legal a{font-size:10px;color:rgba(255,255,255,.22);}
+.ft-legal a:hover{color:rgba(255,255,255,.5);}
+/* scroll top */
+.scroll-top{position:fixed;bottom:28px;right:28px;width:40px;height:40px;background:var(--or);color:var(--bn);border:none;cursor:pointer;display:none;align-items:center;justify-content:center;font-size:14px;z-index:999;transition:var(--tr);}
+.scroll-top:hover{background:var(--or-lt);}
+.scroll-top.vis{display:flex;}
+</style>
+</head>
+<body>
+
+<!-- Top bar -->
+<div class="top-bar">
+  <div class="container">
+    <div class="tb-in">
+      <div class="tb-l">
+        <span class="tb-date">Mercredi 20 Mai 2026</span>
+        <span>·</span>
+        <span>Casablanca</span>
+        <span>·</span>
+        <span>Droit · Finance · Arbitrage · Afrique</span>
+      </div>
+      <div class="tb-r">
+        <div class="tb-soc">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="tb-lnk">
+          <a href="contact.html">Contact</a>
+          <a href="interviews.html">Interviews</a>
+          <a href="tribunes.html">Tribunes</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container">
+    <div class="hd-in">
+      <a href="index.html" class="logo-wrap">
+        <div class="logo-txt">
+          <span class="logo-name">Neybras</span>
+          <span class="logo-tag">Le droit en lumière</span>
+        </div>
+      </a>
+      <div class="hd-act">
+        <button class="btn-srch"><i class="fas fa-search"></i></button>
+        <a href="#" class="btn-abo">S'abonner</a>
+      </div>
+    </div>
+  </div>
+  <nav class="main-nav">
+    <div class="container">
+      <div class="nav-in">
+        <a href="index.html" class="nav-a">Accueil</a>
+        <a href="droit.html" class="nav-a">Droit des affaires</a>
+        <a href="finance.html" class="nav-a">Finance & Marchés</a>
+        <a href="arbitrage.html" class="nav-a">Arbitrage & ADR</a>
+        <a href="afrique.html" class="nav-a">Afrique & OHADA</a>
+        <a href="droit-du-sport.html" class="nav-a star">Sport Business</a>
+        <a href="interviews.html" class="nav-a">Interviews</a>
+        <a href="tribunes.html" class="nav-a on">Tribunes</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="sec-hero">
+  <div class="container">
+    <div class="sec-hero-inner">
+      <div class="sec-eyebrow"><span>Tribunes libres</span></div>
+      <h1>La Plume des Experts</h1>
+      <p class="sec-hero-desc">Des analyses indépendantes signées par les meilleurs juristes, avocats et financiers du Maroc et d'Afrique francophone — des prises de position, des propositions de réforme et des regards critiques sur l'actualité juridique.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Filter tabs -->
+<div class="filter-bar">
+  <div class="container">
+    <div class="filter-in">
+      <button class="ftab active" data-filter="all">Toutes les tribunes</button>
+      <button class="ftab" data-filter="droit">Droit des affaires</button>
+      <button class="ftab" data-filter="finance">Finance</button>
+      <button class="ftab" data-filter="arbitrage">Arbitrage</button>
+      <button class="ftab" data-filter="afrique">Afrique & OHADA</button>
+      <button class="ftab" data-filter="sport">Sport Business</button>
+      <button class="ftab" data-filter="social">Droit social</button>
+    </div>
+  </div>
+</div>
+
+<!-- Main layout -->
+<div class="container">
+  <div class="sec-layout">
+    <main>
+
+      <!-- Featured tribune -->
+      <div class="feat-trib">
+        <div class="feat-trib-img">
+          <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=900&q=80" alt="Tribune droit africain"/>
+          <div class="feat-trib-badge">Tribune</div>
+          <div class="feat-trib-overlay">
+            <div class="author-chip">
+              <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=80&q=80" alt="Me Zineb Maâti"/>
+              <span>Me Zineb Maâti — Avocate au barreau de Casablanca</span>
+            </div>
+            <h2>La réforme du Code du travail marocain : entre nécessité économique et impératif social</h2>
+            <p>Depuis plus de deux décennies, la réforme du Code du travail marocain s'impose comme un chantier incontournable. Le projet en cours de discussion soulève des interrogations fondamentales sur l'équilibre entre la compétitivité et la protection des travailleurs.</p>
+            <a href="#" class="btn-read">Lire la tribune <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quote pullout -->
+      <div class="quote-pullout">
+        <blockquote>« La tribune n'est pas un acte d'opposition — c'est une contribution à la réflexion collective sur le droit vivant. »</blockquote>
+        <cite>— Neybras Magazine, Charte éditoriale</cite>
+      </div>
+
+      <!-- Tribune grid -->
+      <div class="trib-grid">
+
+        <div class="tcard">
+          <div class="tcard-img">
+            <img src="https://images.unsplash.com/photo-1560472355-536de3962603?w=600&q=80" alt="Finance participative"/>
+            <span class="tcard-badge badge-finance">Finance</span>
+          </div>
+          <div class="tcard-body">
+            <div class="tcard-author">
+              <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&q=80" alt="Dr. Salwa Benali"/>
+              <div class="tcard-author-info">
+                <span class="tcard-author-name">Dr. Salwa Benali</span>
+                <span class="tcard-author-role">Économiste, Université Hassan II</span>
+              </div>
+            </div>
+            <h3>Finance participative : pourquoi le Maroc doit accélérer le cadre réglementaire des Sukuk</h3>
+            <p class="tcard-quote">« Trois ans après la loi bancaire participative, le marché des Sukuk marocains reste embryonnaire. Le blocage n'est pas technique — il est réglementaire et fiscal. »</p>
+            <div class="tcard-foot">
+              <span class="tcard-date">15 Mai 2026</span>
+              <a href="#" class="tcard-read">Lire <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tcard">
+          <div class="tcard-img">
+            <img src="https://images.unsplash.com/photo-1589994965851-a8f479c573a9?w=600&q=80" alt="Arbitrage international"/>
+            <span class="tcard-badge badge-arbitrage">Arbitrage</span>
+          </div>
+          <div class="tcard-body">
+            <div class="tcard-author">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&q=80" alt="Me Ismaël Kourouma"/>
+              <div class="tcard-author-info">
+                <span class="tcard-author-name">Me Ismaël Kourouma</span>
+                <span class="tcard-author-role">Avocat, Dakar — Spécialiste OHADA</span>
+              </div>
+            </div>
+            <h3>L'exéquatur des sentences CIRDI en Afrique : vers une harmonisation nécessaire</h3>
+            <p class="tcard-quote">« L'absence de mécanisme unifié d'exéquatur dans l'espace OHADA crée une insécurité juridique qui pénalise les investisseurs étrangers et freine les IDE. »</p>
+            <div class="tcard-foot">
+              <span class="tcard-date">12 Mai 2026</span>
+              <a href="#" class="tcard-read">Lire <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tcard">
+          <div class="tcard-img">
+            <img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=600&q=80" alt="ZLECAf droit"/>
+            <span class="tcard-badge badge-afrique">Afrique</span>
+          </div>
+          <div class="tcard-body">
+            <div class="tcard-author">
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&q=80" alt="Dr. Samir Belhaj"/>
+              <div class="tcard-author-info">
+                <span class="tcard-author-name">Dr. Samir Belhaj</span>
+                <span class="tcard-author-role">Juriste international, Rabat</span>
+              </div>
+            </div>
+            <h3>ZLECAf : l'harmonisation juridique comme condition sine qua non du succès</h3>
+            <p class="tcard-quote">« La ZLECAf restera une construction politique sans lendemain si elle n'est pas accompagnée d'une convergence des droits nationaux vers un standard africain commun. »</p>
+            <div class="tcard-foot">
+              <span class="tcard-date">8 Mai 2026</span>
+              <a href="#" class="tcard-read">Lire <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tcard">
+          <div class="tcard-img">
+            <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=600&q=80" alt="Droit du sport FIFA"/>
+            <span class="tcard-badge badge-trib">Sport Business</span>
+          </div>
+          <div class="tcard-body">
+            <div class="tcard-author">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80" alt="Me Amine Lahlou"/>
+              <div class="tcard-author-info">
+                <span class="tcard-author-name">Me Amine Lahlou</span>
+                <span class="tcard-author-role">Avocat, Barreau de Rabat</span>
+              </div>
+            </div>
+            <h3>Coupe du monde 2030 : les contrats d'infrastructure, entre opportunité et risque juridique</h3>
+            <p class="tcard-quote">« Les marchés publics liés au CdM 2030 doivent être pensés comme des instruments de gouvernance, pas seulement des contrats de travaux. »</p>
+            <div class="tcard-foot">
+              <span class="tcard-date">3 Mai 2026</span>
+              <a href="#" class="tcard-read">Lire <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- More tribunes list -->
+      <div class="trib-list">
+        <div class="trib-list-header">
+          <h2>Tribunes récentes</h2>
+          <div class="line"></div>
+        </div>
+
+        <div class="tlist-item">
+          <div class="tlist-num">01</div>
+          <div class="tlist-body">
+            <div class="tlist-meta">
+              <img class="tlist-author-img" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=60&q=80" alt="Me Hassan Rachidi"/>
+              <span class="tlist-author">Me Hassan Rachidi</span>
+              <span class="tlist-dot">•</span>
+              <span class="tlist-cat">Droit des affaires</span>
+            </div>
+            <h3><a href="#">La protection des données personnelles à l'ère de l'intelligence artificielle : vers une révision de la loi 09-08 ?</a></h3>
+            <p class="tlist-excerpt">La CNDP marocaine se trouve à la croisée des chemins. L'essor des modèles d'IA génératifs impose une refonte profonde du cadre légal de protection des données, calqué il y a plus de quinze ans sur un modèle européen qui lui-même a évolué.</p>
+            <div class="tlist-foot">
+              <span class="tlist-date">18 Mai 2026 · 9 min de lecture</span>
+              <a href="#" class="tlist-read-link">Lire →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tlist-item">
+          <div class="tlist-num">02</div>
+          <div class="tlist-body">
+            <div class="tlist-meta">
+              <img class="tlist-author-img" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=60&q=80" alt="Dr. Salwa Benali"/>
+              <span class="tlist-author">Dr. Salwa Benali</span>
+              <span class="tlist-dot">•</span>
+              <span class="tlist-cat">Finance</span>
+            </div>
+            <h3><a href="#">Green bonds marocains : pourquoi le cadre fiscal doit évoluer pour attirer les investisseurs institutionnels</a></h3>
+            <p class="tlist-excerpt">Le Maroc a réalisé des émissions obligataires vertes remarquables. Pourtant, sans révision du traitement fiscal des revenus de ces instruments, les investisseurs institutionnels étrangers resteront à l'écart du marché domestique.</p>
+            <div class="tlist-foot">
+              <span class="tlist-date">14 Mai 2026 · 7 min de lecture</span>
+              <a href="#" class="tlist-read-link">Lire →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tlist-item">
+          <div class="tlist-num">03</div>
+          <div class="tlist-body">
+            <div class="tlist-meta">
+              <img class="tlist-author-img" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=60&q=80" alt="Dr. Samir Belhaj"/>
+              <span class="tlist-author">Dr. Samir Belhaj</span>
+              <span class="tlist-dot">•</span>
+              <span class="tlist-cat">OHADA</span>
+            </div>
+            <h3><a href="#">La réforme de l'Acte uniforme OHADA sur les sociétés commerciales : enjeux pour le Maroc</a></h3>
+            <p class="tlist-excerpt">Bien que non membre de l'OHADA, le Maroc est directement impacté par ses évolutions normatives à travers ses opérateurs économiques actifs dans l'espace communautaire. Une vigilance s'impose.</p>
+            <div class="tlist-foot">
+              <span class="tlist-date">10 Mai 2026 · 11 min de lecture</span>
+              <a href="#" class="tlist-read-link">Lire →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tlist-item">
+          <div class="tlist-num">04</div>
+          <div class="tlist-body">
+            <div class="tlist-meta">
+              <img class="tlist-author-img" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&q=80" alt="Me Ismaël Kourouma"/>
+              <span class="tlist-author">Me Ismaël Kourouma</span>
+              <span class="tlist-dot">•</span>
+              <span class="tlist-cat">Arbitrage</span>
+            </div>
+            <h3><a href="#">Médiation commerciale : la loi marocaine de 2021 face à l'épreuve de la pratique</a></h3>
+            <p class="tlist-excerpt">Deux ans après l'entrée en vigueur de la loi 95-17 sur la médiation conventionnelle, le bilan est contrasté. La formation des médiateurs et la reconnaissance des accords restent les principaux obstacles à la diffusion de la pratique.</p>
+            <div class="tlist-foot">
+              <span class="tlist-date">5 Mai 2026 · 8 min de lecture</span>
+              <a href="#" class="tlist-read-link">Lire →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="tlist-item">
+          <div class="tlist-num">05</div>
+          <div class="tlist-body">
+            <div class="tlist-meta">
+              <img class="tlist-author-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&q=80" alt="Me Amine Lahlou"/>
+              <span class="tlist-author">Me Amine Lahlou</span>
+              <span class="tlist-dot">•</span>
+              <span class="tlist-cat">Sport Business</span>
+            </div>
+            <h3><a href="#">Droits à l'image des sportifs marocains : un vide juridique que le CdM 2030 devrait combler</a></h3>
+            <p class="tlist-excerpt">La commercialisation de l'image des sportifs professionnels marocains est régie par un cadre légal lacunaire. L'échéance du Mondial 2030 offre une fenêtre d'opportunité pour une réforme structurante.</p>
+            <div class="tlist-foot">
+              <span class="tlist-date">28 Avr 2026 · 10 min de lecture</span>
+              <a href="#" class="tlist-read-link">Lire →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+
+    <!-- Sidebar -->
+    <aside>
+
+      <!-- Most read -->
+      <div class="sw">
+        <div class="sw-title">Les plus lues</div>
+        <div class="mr-item">
+          <div class="mr-num">1</div>
+          <div class="mr-info">
+            <h4><a href="article.html">CdM 2030 : le régime juridique des stades au Maroc</a></h4>
+            <span>Me Amine Lahlou · 4 200 lectures</span>
+          </div>
+        </div>
+        <div class="mr-item">
+          <div class="mr-num">2</div>
+          <div class="mr-info">
+            <h4><a href="#">Finance participative : où en est le Maroc ?</a></h4>
+            <span>Dr. Salwa Benali · 3 100 lectures</span>
+          </div>
+        </div>
+        <div class="mr-item">
+          <div class="mr-num">3</div>
+          <div class="mr-info">
+            <h4><a href="#">IA & CNDP : le règlement européen comme miroir</a></h4>
+            <span>Me Hassan Rachidi · 2 800 lectures</span>
+          </div>
+        </div>
+        <div class="mr-item">
+          <div class="mr-num">4</div>
+          <div class="mr-info">
+            <h4><a href="#">ZLECAf et harmonisation du droit africain</a></h4>
+            <span>Dr. Samir Belhaj · 2 400 lectures</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Experts -->
+      <div class="sw">
+        <div class="sw-title">Nos experts tribunes</div>
+        <div class="exp-item">
+          <img class="exp-av" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=80&q=80" alt="Me Hassan Rachidi"/>
+          <div class="exp-info">
+            <div class="exp-name">Me Hassan Rachidi</div>
+            <div class="exp-role">Avocat, Casablanca</div>
+            <div class="exp-count">6 tribunes</div>
+          </div>
+        </div>
+        <div class="exp-item">
+          <img class="exp-av" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=80&q=80" alt="Dr. Salwa Benali"/>
+          <div class="exp-info">
+            <div class="exp-name">Dr. Salwa Benali</div>
+            <div class="exp-role">Économiste, Hassan II</div>
+            <div class="exp-count">5 tribunes</div>
+          </div>
+        </div>
+        <div class="exp-item">
+          <img class="exp-av" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&q=80" alt="Me Ismaël Kourouma"/>
+          <div class="exp-info">
+            <div class="exp-name">Me Ismaël Kourouma</div>
+            <div class="exp-role">Avocat, Dakar</div>
+            <div class="exp-count">4 tribunes</div>
+          </div>
+        </div>
+        <div class="exp-item">
+          <img class="exp-av" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&q=80" alt="Me Amine Lahlou"/>
+          <div class="exp-info">
+            <div class="exp-name">Me Amine Lahlou</div>
+            <div class="exp-role">Avocat, Rabat</div>
+            <div class="exp-count">4 tribunes</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="sw">
+        <div class="sw-title">Newsletter tribunes</div>
+        <p class="nl-desc">Recevez chaque semaine les nouvelles tribunes directement dans votre boîte mail.</p>
+        <div class="nl-form">
+          <input class="nl-input" type="email" placeholder="Votre adresse e-mail"/>
+          <button class="nl-btn">S'inscrire</button>
+        </div>
+      </div>
+
+      <!-- Propose -->
+      <div class="prop-box">
+        <div class="prop-box-title">Proposer une tribune</div>
+        <p class="prop-box-desc">Vous êtes avocat, juriste, économiste ou expert ? Partagez votre analyse avec nos lecteurs. Neybras publie des tribunes indépendantes sous réserve d'examen éditorial.</p>
+        <a href="contact.html" class="prop-btn">Soumettre une tribune <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <!-- Thèmes -->
+      <div class="sw">
+        <div class="sw-title">Thèmes</div>
+        <div class="tags">
+          <span class="tag">Droit des sociétés</span>
+          <span class="tag">Finance islamique</span>
+          <span class="tag">OHADA</span>
+          <span class="tag">Arbitrage CIRDI</span>
+          <span class="tag">ZLECAf</span>
+          <span class="tag">Code du travail</span>
+          <span class="tag">Données personnelles</span>
+          <span class="tag">Marchés publics</span>
+          <span class="tag">CdM 2030</span>
+          <span class="tag">Green bonds</span>
+          <span class="tag">Médiation</span>
+          <span class="tag">Droit fiscal</span>
+        </div>
+      </div>
+
+    </aside>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <div class="ft-grid">
+      <div class="ft-brand">
+        <div class="logo-name">Neybras</div>
+        <div class="logo-tag">Le droit en lumière</div>
+        <p class="ft-desc">La référence francophone en droit des affaires, finance, arbitrage international et droit africain — pensée par des praticiens, pour des praticiens.</p>
+        <div class="ft-soc">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-x-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div>
+        <div class="ft-col-title">Rubriques</div>
+        <div class="ft-links">
+          <a href="droit.html">Droit des affaires</a>
+          <a href="finance.html">Finance & Marchés</a>
+          <a href="arbitrage.html">Arbitrage & ADR</a>
+          <a href="afrique.html">Afrique & OHADA</a>
+          <a href="droit-du-sport.html">Sport Business</a>
+        </div>
+      </div>
+      <div>
+        <div class="ft-col-title">Magazine</div>
+        <div class="ft-links">
+          <a href="interviews.html">Interviews</a>
+          <a href="tribunes.html">Tribunes</a>
+          <a href="#">Dossiers spéciaux</a>
+          <a href="#">Jurisprudence</a>
+          <a href="#">Agenda juridique</a>
+        </div>
+      </div>
+      <div>
+        <div class="ft-col-title">À propos</div>
+        <div class="ft-links">
+          <a href="contact.html">Contact</a>
+          <a href="#">Équipe éditoriale</a>
+          <a href="#">Mentions légales</a>
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">Conditions d'utilisation</a>
+        </div>
+      </div>
+    </div>
+    <div class="ft-bottom">
+      <span class="ft-copy">© 2026 Neybras Magazine — Tous droits réservés</span>
+      <div class="ft-legal">
+        <a href="#">Mentions légales</a>
+        <a href="#">Confidentialité</a>
+        <a href="#">CGU</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button class="scroll-top" id="scrollTop"><i class="fas fa-arrow-up"></i></button>
+
+<script>
+// filter tabs
+document.querySelectorAll('.ftab').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.ftab').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+  });
+});
+// scroll top
+const st=document.getElementById('scrollTop');
+window.addEventListener('scroll',()=>{
+  st.classList.toggle('vis',window.scrollY>400);
+});
+st.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+</script>
+</body>
+</html>

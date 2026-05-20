@@ -1,0 +1,8 @@
+# Dev / outils locaux
+.claude/
+palette-preview.html
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+desktop.ini

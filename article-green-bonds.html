@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Green Bonds & Sukuk verts : vers une finance durable au Maroc — Neybras Magazine</title>
+<meta name="description" content="Green bonds, Sukuk verts et taxonomie ESG : état des lieux du cadre réglementaire marocain et perspectives pour la finance durable. Par Me Rim Tahiri."/>
+<meta name="author" content="Me Rim Tahiri"/>
+<meta name="robots" content="index,follow"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<style>
+:root{--bn:#0f1e36;--bn2:#0a1528;--or:#b8922e;--or-lt:#d4a94a;--or-bg:rgba(184,146,46,.08);--or-bd:rgba(184,146,46,.22);--page:#fafafa;--blanc:#ffffff;--gris1:#1a1a1a;--gris2:#2d2d2d;--gris3:#555555;--gris4:#888888;--gris5:#bbbbbb;--brd:#e4e4e4;--brd2:#f0f0f0;--cg:'Cormorant Garamond','Georgia',serif;--pd:'Playfair Display','Georgia',serif;--it:'Inter','Helvetica Neue',sans-serif;--tr:all .22s ease;--sh:0 1px 12px rgba(0,0,0,.07);}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--it);background:var(--page);color:var(--gris1);-webkit-font-smoothing:antialiased;}
+a{text-decoration:none;color:inherit;transition:var(--tr);}
+img{max-width:100%;height:auto;display:block;}
+ul{list-style:none;}
+.container{max-width:1240px;margin:0 auto;padding:0 32px;}
+#prog{position:fixed;top:0;left:0;height:2px;background:var(--or);width:0%;z-index:9999;transition:width .08s linear;}
+.top-bar{background:var(--bn2);border-bottom:1px solid rgba(255,255,255,.06);padding:6px 0;}
+.tb-in{display:flex;justify-content:space-between;align-items:center;}
+.tb-l{display:flex;align-items:center;gap:16px;font-size:10px;color:rgba(255,255,255,.32);}
+.tb-date{color:rgba(184,146,46,.8);font-weight:500;}
+.tb-r{display:flex;align-items:center;gap:16px;}
+.tb-soc{display:flex;gap:12px;}
+.tb-soc a{color:rgba(255,255,255,.28);font-size:11px;}
+.tb-soc a:hover{color:var(--or-lt);}
+.tb-lnk{display:flex;gap:16px;}
+.tb-lnk a{font-size:10px;color:rgba(255,255,255,.3);letter-spacing:.07em;text-transform:uppercase;}
+.tb-lnk a:hover{color:rgba(255,255,255,.65);}
+.site-header{background:var(--bn);position:sticky;top:0;z-index:1000;border-bottom:1px solid rgba(255,255,255,.07);}
+.hd-in{display:flex;align-items:center;justify-content:space-between;padding:10px 0;}
+.logo-wrap{display:flex;align-items:center;gap:12px;}
+.logo-txt{display:flex;flex-direction:column;}
+.logo-name{font-family:var(--it);font-size:16px;font-weight:700;letter-spacing:.2em;color:#fff;text-transform:uppercase;line-height:1;}
+.logo-tag{font-family:var(--cg);font-style:italic;font-size:10.5px;color:rgba(184,146,46,.75);margin-top:2px;}
+.hd-act{display:flex;align-items:center;gap:14px;}
+.btn-srch{background:none;border:none;color:rgba(255,255,255,.4);font-size:14px;cursor:pointer;padding:6px;}
+.btn-abo{border:1px solid rgba(255,255,255,.28);color:rgba(255,255,255,.72);font-size:9.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:8px 18px;border-radius:1px;background:transparent;transition:var(--tr);}
+.btn-abo:hover{border-color:var(--or-lt);color:var(--or-lt);}
+.main-nav{background:var(--bn);border-bottom:1px solid rgba(184,146,46,.3);}
+.nav-in{display:flex;overflow-x:auto;scrollbar-width:none;}
+.nav-in::-webkit-scrollbar{display:none;}
+.nav-a{display:block;font-size:9.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.42);padding:10px 15px;white-space:nowrap;border-bottom:2px solid transparent;margin-bottom:-1px;transition:var(--tr);}
+.nav-a:hover{color:rgba(255,255,255,.82);}
+.nav-a.on{color:#fff;border-bottom-color:var(--or);}
+.nav-a.star{color:rgba(184,146,46,.75);}
+.art-hero{background:var(--blanc);border-bottom:1px solid var(--brd);padding:52px 0 0;}
+.art-hero-inner{max-width:900px;margin:0 auto;padding:0 32px;}
+.breadcrumb{display:flex;align-items:center;gap:7px;font-size:10.5px;color:var(--gris4);margin-bottom:28px;}
+.breadcrumb a{color:var(--gris4);}
+.breadcrumb a:hover{color:var(--gris2);}
+.breadcrumb .bsep{color:var(--gris5);}
+.art-category{display:flex;align-items:center;gap:14px;margin-bottom:22px;}
+.art-cat-line{display:inline-block;width:28px;height:1px;background:var(--or);}
+.art-cat-label{font-size:9.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--or);}
+.art-h1{font-family:var(--cg);font-size:clamp(28px,4vw,50px);font-weight:600;color:var(--bn);line-height:1.18;letter-spacing:-.01em;margin-bottom:18px;max-width:800px;}
+.art-deck{font-family:var(--cg);font-size:clamp(15px,2vw,19px);font-style:italic;color:var(--gris3);line-height:1.55;margin-bottom:26px;max-width:740px;}
+.art-meta{display:flex;align-items:center;flex-wrap:wrap;font-size:11.5px;color:var(--gris4);padding:18px 0;border-top:1px solid var(--brd2);border-bottom:1px solid var(--brd2);margin-bottom:38px;}
+.am-author-wrap{display:flex;align-items:center;gap:9px;}
+.am-av{width:30px;height:30px;border-radius:50%;object-fit:cover;border:1.5px solid var(--or-bd);}
+.am-name{font-weight:600;color:var(--gris2);font-size:12px;}
+.am-dot{color:var(--gris5);margin:0 10px;}
+.am-share-wrap{margin-left:auto;display:flex;align-items:center;gap:8px;}
+.am-sh{width:28px;height:28px;border-radius:50%;border:1px solid var(--brd);display:flex;align-items:center;justify-content:center;color:var(--gris4);font-size:11px;transition:var(--tr);}
+.am-sh:hover{border-color:var(--or);color:var(--or);}
+.art-image-wrap{margin:0 -32px 0;}
+.art-image-wrap img{width:100%;max-height:460px;object-fit:cover;}
+.art-image-caption{font-size:10.5px;color:var(--gris4);padding:10px 32px;border-bottom:1px solid var(--brd);background:var(--blanc);}
+.art-wrap{padding:52px 0 72px;}
+.art-layout{display:grid;grid-template-columns:1fr 292px;gap:60px;align-items:start;}
+.art-col{min-width:0;}
+.share-float{float:left;margin-left:-60px;position:sticky;top:88px;display:flex;flex-direction:column;align-items:center;gap:10px;width:44px;padding-top:6px;}
+.sf-btn{width:36px;height:36px;border:1px solid var(--brd);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gris4);font-size:12px;background:var(--blanc);transition:var(--tr);box-shadow:var(--sh);}
+.sf-btn:hover{border-color:var(--or);color:var(--or);transform:scale(1.06);}
+.sf-count{font-size:9.5px;color:var(--gris4);text-align:center;line-height:1.3;}
+.art-text{font-family:var(--cg);font-size:20px;line-height:1.82;color:var(--gris3);}
+.art-text p{margin-bottom:28px;}
+.art-text .chapeau{font-size:21px;font-weight:500;color:var(--gris2);line-height:1.68;border-left:2px solid var(--or);padding-left:20px;margin-bottom:36px;}
+.art-text h2{font-family:var(--pd);font-size:23px;font-weight:700;color:var(--bn);line-height:1.28;margin:52px 0 20px;padding-top:6px;}
+.art-text h2 span.h2-marker{display:block;width:22px;height:1px;background:var(--or);margin-bottom:14px;}
+.art-text h3{font-family:var(--pd);font-size:18px;font-weight:700;color:var(--gris2);margin:36px 0 14px;}
+.art-text strong{font-weight:600;color:var(--gris2);}
+.art-text em{font-style:italic;}
+.art-text ul{padding-left:0;margin-bottom:28px;border-top:1px solid var(--brd2);}
+.art-text ul li{font-size:19px;padding:10px 0 10px 18px;border-bottom:1px solid var(--brd2);position:relative;color:var(--gris3);}
+.art-text ul li::before{content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);width:5px;height:5px;background:var(--or);border-radius:50%;}
+.pull-quote{margin:48px 0;padding:32px 36px 32px 40px;background:#f9f6ef;border-left:3px solid var(--or);}
+.pull-quote blockquote{font-family:var(--cg);font-size:22px;font-style:italic;color:var(--bn);line-height:1.55;margin-bottom:14px;}
+.pull-quote cite{font-size:10.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--or);font-style:normal;}
+.highlight-box{margin:36px 0;padding:24px 28px;background:var(--blanc);border:1px solid var(--brd);border-top:2px solid var(--or);}
+.hb-title{font-size:9px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--or);margin-bottom:16px;display:flex;align-items:center;gap:8px;}
+.highlight-box ul{border-top:none;}
+.highlight-box ul li{font-size:17px;color:var(--gris3);padding:8px 0 8px 18px;border-bottom:1px solid var(--brd2);}
+.highlight-box ul li:last-child{border-bottom:none;}
+.art-table{width:100%;border-collapse:collapse;margin:36px 0;}
+.art-table thead tr{border-bottom:2px solid var(--bn);}
+.art-table th{font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--bn);padding:10px 14px;text-align:left;background:#f5f5f5;}
+.art-table td{padding:12px 14px;border-bottom:1px solid var(--brd2);font-family:var(--cg);font-size:17px;color:var(--gris3);vertical-align:top;}
+.art-table td:first-child{font-weight:600;color:var(--gris2);}
+.art-table tr:hover td{background:#fafaf6;}
+.art-note{font-size:11.5px;color:var(--gris4);line-height:1.75;padding-top:24px;border-top:1px solid var(--brd);margin-top:44px;}
+.art-tags{display:flex;flex-wrap:wrap;gap:8px;padding:28px 0;border-top:1px solid var(--brd);border-bottom:1px solid var(--brd);margin-top:40px;}
+.art-tags .tag-lbl{font-size:9.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gris4);align-self:center;margin-right:4px;}
+.tag-item{font-size:10px;padding:4px 12px;border:1px solid var(--brd);color:var(--gris3);transition:var(--tr);}
+.tag-item:hover{border-color:var(--or);color:var(--or);}
+.share-bar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:22px 0;border-bottom:1px solid var(--brd);}
+.share-lbl{font-size:9.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gris4);margin-right:4px;}
+.sh-a{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;font-size:10.5px;font-weight:600;transition:var(--tr);}
+.sh-li{background:#0a66c2;color:#fff;}
+.sh-tw{background:#0f1419;color:#fff;}
+.sh-wa{background:#25d366;color:#fff;}
+.sh-cp{background:transparent;color:var(--gris3);border:1px solid var(--brd);cursor:pointer;}
+.sh-cp:hover{border-color:var(--or);color:var(--or);}
+.author-box{margin:40px 0;padding:28px 32px;background:var(--blanc);border:1px solid var(--brd);border-top:2px solid var(--bn);display:grid;grid-template-columns:68px 1fr;gap:22px;align-items:start;}
+.author-box img{width:68px;height:68px;border-radius:50%;object-fit:cover;border:2px solid var(--or-bd);}
+.auth-label{font-size:9px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gris4);margin-bottom:5px;}
+.auth-name{font-family:var(--pd);font-size:18px;font-weight:700;color:var(--bn);margin-bottom:3px;}
+.auth-role{font-size:11.5px;color:var(--gris4);margin-bottom:12px;}
+.auth-bio{font-family:var(--cg);font-size:16.5px;color:var(--gris3);line-height:1.7;}
+.auth-links{display:flex;gap:8px;margin-top:14px;}
+.auth-lnk{width:30px;height:30px;border:1px solid var(--brd);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gris4);font-size:11px;transition:var(--tr);}
+.auth-lnk:hover{border-color:var(--or);color:var(--or);}
+.art-aside{display:flex;flex-direction:column;gap:28px;position:sticky;top:82px;}
+.wg{background:var(--blanc);border:1px solid var(--brd);padding:22px;}
+.wt{font-size:9px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gris2);padding-bottom:10px;margin-bottom:16px;border-bottom:1px solid var(--brd);}
+.toc{display:flex;flex-direction:column;}
+.toc-item{display:flex;align-items:start;gap:12px;padding:10px 0;border-bottom:1px solid var(--brd2);cursor:pointer;transition:var(--tr);}
+.toc-item:last-child{border-bottom:none;padding-bottom:0;}
+.toc-n{font-family:var(--cg);font-size:20px;font-weight:600;color:var(--gris5);line-height:1;flex-shrink:0;width:22px;transition:var(--tr);}
+.toc-t{font-size:11.5px;color:var(--gris3);line-height:1.45;transition:var(--tr);}
+.toc-item:hover .toc-n,.toc-item.act .toc-n{color:var(--or);}
+.toc-item:hover .toc-t,.toc-item.act .toc-t{color:var(--gris1);}
+.toc-item.act{border-left:2px solid var(--or);padding-left:10px;margin-left:-10px;}
+.rel-item{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--brd2);align-items:flex-start;}
+.rel-item:last-child{border-bottom:none;padding-bottom:0;}
+.rel-thumb{width:62px;height:48px;object-fit:cover;flex-shrink:0;}
+.rel-info h4{font-family:var(--pd);font-size:.82rem;font-weight:700;color:var(--gris1);line-height:1.3;margin-bottom:3px;}
+.rel-info h4 a:hover{color:var(--or);}
+.rel-info span{font-size:10px;color:var(--gris5);}
+.nl-desc{font-size:12px;color:var(--gris3);line-height:1.6;margin-bottom:14px;}
+.nl-input{width:100%;padding:10px 14px;border:1px solid var(--brd);font-size:12px;background:var(--page);outline:none;transition:var(--tr);margin-bottom:8px;}
+.nl-input:focus{border-color:var(--or);}
+.nl-btn{width:100%;background:var(--or);color:var(--bn);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:11px;border:none;cursor:pointer;transition:var(--tr);}
+.nl-btn:hover{background:var(--or-lt);}
+.kf-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--brd);}
+.kf-cell{background:var(--blanc);padding:14px 12px;text-align:center;}
+.kf-val{font-family:var(--pd);font-size:1.2rem;font-weight:900;color:var(--bn);line-height:1;}
+.kf-lbl{font-size:9.5px;color:var(--gris4);margin-top:4px;line-height:1.3;}
+footer{background:var(--bn2);border-top:3px solid rgba(184,146,46,.3);padding:48px 0 28px;}
+.ft-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px;}
+.ft-brand .logo-name{font-size:14px;margin-bottom:6px;}
+.ft-brand .logo-tag{font-size:10px;margin-bottom:14px;}
+.ft-desc{font-size:11.5px;color:rgba(255,255,255,.38);line-height:1.7;margin-bottom:16px;}
+.ft-soc{display:flex;gap:12px;}
+.ft-soc a{width:30px;height:30px;border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.3);font-size:11px;transition:var(--tr);}
+.ft-soc a:hover{border-color:var(--or);color:var(--or);}
+.ft-col-title{font-size:9px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(184,146,46,.7);margin-bottom:16px;}
+.ft-links{display:flex;flex-direction:column;gap:9px;}
+.ft-links a{font-size:11.5px;color:rgba(255,255,255,.35);transition:var(--tr);}
+.ft-links a:hover{color:rgba(255,255,255,.72);}
+.ft-bottom{border-top:1px solid rgba(255,255,255,.07);padding-top:22px;display:flex;justify-content:space-between;align-items:center;}
+.ft-copy{font-size:10px;color:rgba(255,255,255,.22);}
+.ft-legal{display:flex;gap:20px;}
+.ft-legal a{font-size:10px;color:rgba(255,255,255,.22);}
+.scroll-top{position:fixed;bottom:28px;right:28px;width:40px;height:40px;background:var(--or);color:var(--bn);border:none;cursor:pointer;display:none;align-items:center;justify-content:center;font-size:14px;z-index:999;transition:var(--tr);}
+.scroll-top:hover{background:var(--or-lt);}
+.scroll-top.vis{display:flex;}
+/* search overlay */
+.srch-ov{position:fixed;inset:0;background:rgba(10,21,40,.96);z-index:9000;display:none;align-items:flex-start;justify-content:center;padding-top:120px;}
+.srch-ov.open{display:flex;}
+.srch-box{width:100%;max-width:620px;padding:0 24px;}
+.srch-input{width:100%;background:transparent;border:none;border-bottom:1px solid rgba(255,255,255,.2);padding:12px 0;font-family:var(--cg);font-size:28px;color:#fff;outline:none;caret-color:var(--or);}
+.srch-close{position:absolute;top:28px;right:36px;background:none;border:none;color:rgba(255,255,255,.4);font-size:20px;cursor:pointer;}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+
+<!-- Search overlay -->
+<div class="srch-ov" id="srchOv">
+  <div class="srch-box">
+    <input class="srch-input" placeholder="Rechercher un article, un auteur…" id="srchInp" autocomplete="off"/>
+    <p style="font-size:11px;color:rgba(255,255,255,.28);margin-top:14px;font-family:var(--it);">Appuyez sur Échap pour fermer</p>
+  </div>
+  <button class="srch-close" id="srchClose"><i class="fas fa-times"></i></button>
+</div>
+
+<!-- Top bar -->
+<div class="top-bar"><div class="container"><div class="tb-in">
+  <div class="tb-l"><span class="tb-date">Mercredi 20 Mai 2026</span><span>·</span><span>Casablanca</span><span>·</span><span>Finance · Marchés · Durable</span></div>
+  <div class="tb-r"><div class="tb-soc"><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a></div><div class="tb-lnk"><a href="contact.html">Contact</a><a href="interviews.html">Interviews</a><a href="tribunes.html">Tribunes</a></div></div>
+</div></div></div>
+
+<!-- Header -->
+<header class="site-header"><div class="container"><div class="hd-in">
+  <a href="index.html" class="logo-wrap">
+    <div class="logo-txt"><span class="logo-name">Neybras</span><span class="logo-tag">Revue juridique & financière</span></div>
+  </a>
+  <div class="hd-act">
+    <button class="btn-srch" id="btnSrch" aria-label="Rechercher"><i class="fas fa-search"></i></button>
+    <a href="contact.html" class="btn-abo">S'abonner</a>
+  </div>
+</div></div></header>
+
+<!-- Nav -->
+<nav class="main-nav"><div class="container"><div class="nav-in">
+  <a href="index.html" class="nav-a">Accueil</a>
+  <a href="droit.html" class="nav-a">Droit des affaires</a>
+  <a href="finance.html" class="nav-a on">Finance &amp; Marchés</a>
+  <a href="arbitrage.html" class="nav-a">Arbitrage &amp; ADR</a>
+  <a href="afrique.html" class="nav-a">Afrique &amp; OHADA</a>
+  <a href="interviews.html" class="nav-a">Interviews</a>
+  <a href="tribunes.html" class="nav-a">Tribunes</a>
+  <a href="contact.html" class="nav-a star">Tribune libre</a>
+</div></div></nav>
+
+<!-- Hero -->
+<section class="art-hero">
+  <div class="art-hero-inner">
+    <nav class="breadcrumb">
+      <a href="index.html">Accueil</a><span class="bsep">/</span>
+      <a href="finance.html">Finance &amp; Marchés</a><span class="bsep">/</span>
+      <span>Green Bonds &amp; Sukuk verts</span>
+    </nav>
+    <div class="art-category"><span class="art-cat-line"></span><span class="art-cat-label">Finance &amp; Marchés</span></div>
+    <h1 class="art-h1">Green Bonds &amp; Sukuk verts : vers une finance durable au Maroc — enjeux juridiques et opportunités</h1>
+    <p class="art-deck">L'essor des obligations vertes et des Sukuk durables interroge le cadre réglementaire marocain. Entre taxonomie ESG balbutiante, fiscalité inadaptée et potentiel de marché considérable, Me Rim Tahiri dresse un état des lieux et trace des pistes concrètes pour les praticiens.</p>
+    <div class="art-meta">
+      <div class="am-author-wrap">
+        <img class="am-av" src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=60&q=80" alt="Me Rim Tahiri"/>
+        <span class="am-name">Me Rim Tahiri</span>
+      </div>
+      <span class="am-dot">·</span><span>Finance durable</span>
+      <span class="am-dot">·</span><span>10 min de lecture</span>
+      <span class="am-dot">·</span><span>15 mai 2026</span>
+      <div class="am-share-wrap">
+        <a href="#" class="am-sh" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="am-sh" title="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" class="am-sh" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <div class="art-image-wrap">
+      <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=1200&q=80" alt="Énergie solaire et finance verte — Green bonds"/>
+      <p class="art-image-caption">La transition énergétique accélère la demande d'instruments financiers durables, mettant le Maroc face à l'urgence de son cadre réglementaire ESG. © Unsplash</p>
+    </div>
+  </div>
+</section>
+
+<!-- Article body -->
+<div class="art-wrap"><div class="container">
+  <div class="art-layout">
+    <!-- Main column -->
+    <div class="art-col">
+      <!-- Floating share -->
+      <div class="share-float">
+        <a href="#" class="sf-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" class="sf-btn" title="Twitter/X"><i class="fab fa-x-twitter"></i></a>
+        <a href="#" class="sf-btn" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        <button class="sf-btn" id="cpyFloat" title="Copier le lien"><i class="fas fa-link"></i></button>
+        <span class="sf-count" id="rdCnt">0<br>min</span>
+      </div>
+
+      <!-- Article text -->
+      <div class="art-text">
+        <p class="chapeau">La finance durable représente l'un des pivots de la transformation du paysage financier mondial. Avec plus de 500 milliards de dollars d'obligations vertes émises en 2025 à l'échelle globale, le Maroc — dont l'ambition climatique se matérialise dans une NDC actualisée visant 45,5 % de réduction des émissions à l'horizon 2030 — ne peut demeurer spectateur de cette révolution de l'allocation du capital.</p>
+
+        <!-- Section I -->
+        <h2 id="s1"><span class="h2-marker"></span>I. Le cadre réglementaire existant : fondations solides, lacunes persistantes</h2>
+
+        <h3>A. Les Green Bonds au Maroc : premiers jalons</h3>
+        <p>Le marché marocain des obligations vertes est officiellement né en 2016, avec la première émission d'un <em>green bond</em> souverain par la Caisse de Dépôt et de Gestion (CDG), d'un montant de 1 milliard de dirhams. Cette initiative pionnière s'est progressivement structurée autour de l'Autorité Marocaine du Marché des Capitaux (AMMC), dont la <strong>circulaire n°03/22 relative aux obligations vertes, sociales et durables</strong> constitue aujourd'hui le socle réglementaire de référence.</p>
+        <p>La circulaire impose aux émetteurs une déclaration préalable d'intention, la désignation d'un <em>second party opinion</em> (SPO) accrédité, et un rapport annuel d'affectation des fonds. Elle s'aligne en cela sur les <em>Green Bond Principles</em> de l'ICMA (International Capital Market Association), assurant une compatibilité avec les standards internationaux et la lisibilité pour les investisseurs institutionnels étrangers.</p>
+        <p>Cependant, l'absence d'une <strong>taxonomie verte nationale</strong> — équivalent de la taxonomie européenne du Règlement (UE) 2020/852 — crée une zone grise substantielle. Les émetteurs jouissent d'une latitude considérable dans la définition des actifs éligibles, au risque d'un <em>greenwashing</em> que la réglementation actuelle ne prévient qu'imparfaitement.</p>
+
+        <div class="highlight-box">
+          <div class="hb-title"><i class="fas fa-leaf"></i> Instruments de finance durable au Maroc (2026)</div>
+          <ul>
+            <li><strong>Green bonds</strong> — émissions souveraines et corporates, encadrées par circulaire AMMC n°03/22</li>
+            <li><strong>Social bonds</strong> — financement de projets à impact social (logement, éducation, santé)</li>
+            <li><strong>Sustainability bonds</strong> — combinaison verte et sociale, en développement</li>
+            <li><strong>Sukuk verts</strong> — instruments participatifs adossés à des actifs durables, cadre loi 103-12</li>
+            <li><strong>Green loans</strong> — prêts bancaires verts, pas encore standardisés au niveau local</li>
+            <li><strong>SLB</strong> (Sustainability-Linked Bonds) — liés à des KPIs durables, pratiquement absents</li>
+          </ul>
+        </div>
+
+        <h3>B. Les Sukuk verts : une convergence inédite</h3>
+        <p>L'intersection entre finance islamique et finance durable constitue l'une des innovations les plus prometteuses du marché financier africain. Les <strong>Sukuk verts</strong> — titres participatifs conformes à la Charia adossés à des projets d'énergie renouvelable, d'efficacité énergétique ou d'économie circulaire — permettent de mobiliser simultanément la liquidité des marchés du Golfe et des capitaux ESG occidentaux.</p>
+        <p>Le cadre juridique marocain des Sukuk, issu des articles 1er bis et suivants de la loi n°103-12 relative aux établissements de crédit, complété par les circulaires du Conseil Supérieur des Oulémas (CSO), reconnaît les principales structures Sukuk (Ijara, Mourabaha, Moucharaka) mais ne prévoit pas expressément la catégorie «&nbsp;vert&nbsp;». Il appartient donc à l'émetteur de superposer les exigences ESG aux conditions de conformité Charia, en recourant à un double audit — <em>Shari'a board</em> et SPO — dont le coût constitue un frein documenté pour les émetteurs de taille intermédiaire.</p>
+
+        <div class="pull-quote">
+          <blockquote>«&nbsp;Le Sukuk vert incarne la convergence entre les valeurs éthiques de la finance islamique et l'impératif climatique. Le Maroc dispose d'un positionnement unique pour en faire un instrument de référence en Afrique.&nbsp;»</blockquote>
+          <cite>— Me Rim Tahiri, avocate spécialisée en finance de marché</cite>
+        </div>
+
+        <!-- Section II -->
+        <h2 id="s2"><span class="h2-marker"></span>II. Analyse comparative : le Maroc dans l'écosystème ESG africain et mondial</h2>
+
+        <p>Pour apprécier le niveau de maturité du cadre marocain, une comparaison internationale est instructive. Le tableau ci-dessous confronte les principaux marchés de finance durable sur des critères réglementaires et de marché.</p>
+
+        <table class="art-table">
+          <thead>
+            <tr>
+              <th>Pays / Marché</th>
+              <th>Taxonomie verte</th>
+              <th>Volume green bonds 2025</th>
+              <th>Sukuk verts</th>
+              <th>Avantage fiscal ESG</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Union européenne</td><td>Oui — Règl. 2020/852</td><td>~350 Mds €</td><td>Non applicable</td><td>Oui (Green Bond Standard EU)</td></tr>
+            <tr><td>Malaisie</td><td>Oui — CCPT 2021</td><td>~18 Mds $</td><td>Marché mature (SRI Sukuk)</td><td>Oui (déduction frais SPO)</td></tr>
+            <tr><td>Arabie Saoudite</td><td>En cours</td><td>~12 Mds $</td><td>Vision 2030 green Sukuk</td><td>Partiel</td></tr>
+            <tr><td>Maroc</td><td>Non — projet AMMC 2025</td><td>~1,8 Md MAD</td><td>Cadre hybride partiel</td><td>Non</td></tr>
+            <tr><td>Afrique du Sud</td><td>Non</td><td>~2,1 Mds $</td><td>Non applicable</td><td>Non</td></tr>
+            <tr><td>Kenya</td><td>Non</td><td>~400 M $</td><td>Non applicable</td><td>Non</td></tr>
+            <tr><td>Sénégal</td><td>Non</td><td>~300 M $</td><td>Sukuk souverain (non vert)</td><td>Non</td></tr>
+          </tbody>
+        </table>
+
+        <p>Ce tableau révèle une réalité contrastée&nbsp;: le Maroc est certes en retard sur la taxonomie et l'incitation fiscale, mais il jouit d'un positionnement stratégique unique — seul pays africain disposant à la fois d'un cadre de finance islamique opérationnel (loi 103-12) et d'un régulateur de marché actif sur la thématique ESG (AMMC). C'est précisément à l'intersection de ces deux atouts que se trouve l'opportunité.</p>
+
+        <!-- Section III -->
+        <h2 id="s3"><span class="h2-marker"></span>III. Les obstacles juridiques et fiscaux à lever</h2>
+
+        <h3>A. L'urgence d'une taxonomie nationale</h3>
+        <p>L'AMMC a annoncé en 2025 un projet de taxonomie verte en cours de concertation avec le Ministère de la Transition Énergétique et la Banque Al-Maghrib. Ce chantier est d'une importance capitale&nbsp;: sans définition normative des activités économiques «&nbsp;durables&nbsp;», les émetteurs exposent leurs émissions au risque de requalification et les investisseurs institutionnels — soumis eux-mêmes à des obligations de reporting ESG — ne peuvent pas valoriser correctement leur exposition.</p>
+        <p>La taxonomie à construire devra impérativement intégrer deux dimensions&nbsp;: (i) la <strong>dimension environnementale</strong>, en s'alignant sur les six objectifs environnementaux du Règlement européen (atténuation du changement climatique, adaptation, eau, économie circulaire, pollution, biodiversité) ; et (ii) la <strong>dimension charia-compatibilité</strong>, en prévoyant un label «&nbsp;Sukuk vert conforme&nbsp;» permettant la double certification sans doublement des coûts.</p>
+
+        <h3>B. Le traitement fiscal : le maillon manquant</h3>
+        <p>En Malaisie, les frais de certification des SRI Sukuk (Sustainable and Responsible Investment Sukuk) sont déductibles du résultat fiscal depuis 2017. Au Luxembourg, le régime <em>Green Bond Framework</em> prévoit des exemptions partielles de retenue à la source. Au Maroc, aucun dispositif comparable n'existe&nbsp;: les coûts d'émission d'un green bond — SPO, certification, audit annuel d'affectation — sont traités comme des charges ordinaires, sans déductibilité spécifique ni crédit d'impôt.</p>
+        <p>Cette lacune est particulièrement pénalisante pour les collectivités territoriales et les entreprises publiques, qui constituent les émetteurs naturels de green bonds infrastructure. La révision du Code Général des Impôts, attendue dans le cadre des lois de finances successives, devrait inscrire un régime de faveur pour les émissions certifiées ESG, à l'instar des incitations prévues pour les zones franches ou le régime de la finance participative.</p>
+
+        <div class="highlight-box">
+          <div class="hb-title"><i class="fas fa-exclamation-triangle"></i> Obstacles à lever pour le marché marocain des Green Bonds &amp; Sukuk verts</div>
+          <ul>
+            <li>Absence de taxonomie verte nationale — projet AMMC en consultation depuis 2025</li>
+            <li>Coût double de certification (SPO + Shari'a board) pour les Sukuk verts</li>
+            <li>Pas d'incitation fiscale spécifique aux émissions durables certifiées</li>
+            <li>Marché secondaire peu liquide — faible base d'investisseurs institutionnels locaux ESG</li>
+            <li>Absence de cadre SLB (Sustainability-Linked Bonds) encadrant les KPIs de durabilité</li>
+            <li>Reporting standardisé post-émission non harmonisé avec TCFD ni GRI</li>
+          </ul>
+        </div>
+
+        <!-- Section IV -->
+        <h2 id="s4"><span class="h2-marker"></span>IV. Recommandations pour les praticiens et pistes d'action</h2>
+
+        <p>Face à ce cadre en construction, les avocats d'affaires, conseils financiers et directions juridiques des émetteurs doivent adopter une approche proactive. Plusieurs recommandations pratiques s'imposent.</p>
+
+        <ul>
+          <li><strong>Anticiper la taxonomie</strong> — Dès à présent, aligner les prospectus d'émission sur les critères de la taxonomie européenne (DNSH — Do No Significant Harm) afin d'assurer une compatibilité préventive avec le cadre marocain à venir</li>
+          <li><strong>Structurer des Sukuk verts hybrides</strong> — Recourir à une documentation juridique tripartite (prospectus AMMC + opinion Shari'a + SPO ICMA) pour préparer une certification ultérieure sans refonte documentaire</li>
+          <li><strong>Intégrer les clauses de reporting ESG</strong> — Inclure dans les actes d'émission des obligations contractuelles de rapport annuel d'affectation, en référence aux standards ICMA et aux métriques alignées TCFD</li>
+          <li><strong>Plaider pour un régime fiscal dédié</strong> — Lors des consultations PLF (Projet de Loi de Finances), documenter et quantifier le manque à gagner fiscal lié à l'absence d'incitation, à l'image des travaux menés par la CGEM sur la finance participative</li>
+          <li><strong>Développer la base d'investisseurs institutionnels</strong> — Accompagner les OPCVM et fonds de pension dans l'adoption de politiques d'investissement ESG permettant d'absorber les émissions domestiques de green bonds</li>
+        </ul>
+
+        <p>À plus long terme, l'émergence d'un <strong>Maroc Green Bond Standard</strong> — s'inspirant du EU Green Bond Standard en l'adaptant au contexte Charia — représente l'aboutissement naturel de cette trajectoire. Ce label national, couvrant à la fois les obligations conventionnelles et les Sukuk, constituerait un outil de différenciation majeur pour le Casablanca Finance City (CFC) dans sa compétition régionale.</p>
+
+        <!-- Section V -->
+        <h2 id="s5"><span class="h2-marker"></span>V. Conclusion : une fenêtre d'opportunité à saisir</h2>
+
+        <p>Le Maroc se trouve à un carrefour décisif. D'un côté, les engagements climatiques (NDC 2030, Stratégie Bas Carbone 2050) créent une demande structurelle de financement vert estimée à plusieurs dizaines de milliards de dirhams sur la décennie. De l'autre, l'architecture institutionnelle — AMMC active, BAM sensibilisée aux risques climatiques, loi 103-12 opérationnelle — fournit les fondations d'un marché crédible.</p>
+        <p>Ce qui manque n'est pas la volonté mais la coordination normative&nbsp;: taxonomie, fiscalité, reporting, double certification islamique-ESG. Chacun de ces chantiers est techniquement maîtrisable et institutionnellement ancrable dans les réformes en cours. La fenêtre d'opportunité est réelle — d'autres places africaines (Nairobi, Lagos, Johannesburg) s'en saisissent. Le risque n'est pas d'aller trop vite, mais de laisser l'initiative à d'autres.</p>
+        <p>Pour les praticiens, la période actuelle est idéale&nbsp;: accompagner les premiers émetteurs dans ce marché en construction, c'est acquérir l'expertise de référence qui sera déterminante lorsque le cadre sera pleinement stabilisé. En droit, comme en finance, les précurseurs écrivent les standards.</p>
+
+        <div class="art-note">
+          <strong>Note de l'auteure</strong><br/>
+          Cet article a une vocation informative et pédagogique. Il ne constitue pas un conseil juridique ou financier. Les données de marché citées sont issues des rapports annuels AMMC 2025, des publications ICMA, de Climate Bonds Initiative et de la Banque Mondiale (rapport Finance durable MENA 2025). Me Rim Tahiri exerce au sein du cabinet Tahiri &amp; Associés, spécialisé en droit des marchés financiers et finance participative.
+        </div>
+
+        <!-- Tags -->
+        <div class="art-tags">
+          <span class="tag-lbl">Tags :</span>
+          <a href="#" class="tag-item">Green Bonds</a>
+          <a href="#" class="tag-item">Sukuk verts</a>
+          <a href="#" class="tag-item">Finance durable</a>
+          <a href="#" class="tag-item">ESG</a>
+          <a href="#" class="tag-item">AMMC</a>
+          <a href="#" class="tag-item">Taxonomie verte</a>
+          <a href="#" class="tag-item">Finance islamique</a>
+          <a href="#" class="tag-item">CFC</a>
+          <a href="#" class="tag-item">Transition énergétique</a>
+        </div>
+
+        <!-- Share bar -->
+        <div class="share-bar">
+          <span class="share-lbl">Partager :</span>
+          <a href="#" class="sh-a sh-li"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+          <a href="#" class="sh-a sh-tw"><i class="fab fa-x-twitter"></i> Twitter</a>
+          <a href="#" class="sh-a sh-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <button class="sh-a sh-cp" id="cpyBar"><i class="fas fa-link"></i> Copier le lien</button>
+        </div>
+
+        <!-- Author box -->
+        <div class="author-box">
+          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=140&q=80" alt="Me Rim Tahiri"/>
+          <div>
+            <div class="auth-label">À propos de l'auteure</div>
+            <div class="auth-name">Me Rim Tahiri</div>
+            <div class="auth-role">Avocate — Finance de marché &amp; Finance participative | Tahiri &amp; Associés, Casablanca</div>
+            <p class="auth-bio">Me Rim Tahiri est avocate spécialisée en droit des marchés de capitaux et en finance islamique. Diplômée de Paris II Panthéon-Assas et de l'ESCA École de Management, elle conseille des émetteurs souverains, des institutions financières et des investisseurs institutionnels sur leurs opérations de marché et leurs stratégies ESG. Elle est membre de la commission Finance Durable de la CGEM et contribue régulièrement aux travaux de l'AMMC sur la réforme du cadre réglementaire des instruments durables.</p>
+            <div class="auth-links">
+              <a href="#" class="auth-lnk"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="auth-lnk"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div><!-- /art-text -->
+    </div><!-- /art-col -->
+
+    <!-- Sidebar -->
+    <aside class="art-aside">
+      <!-- TOC -->
+      <div class="wg">
+        <div class="wt">Sommaire</div>
+        <div class="toc">
+          <div class="toc-item" onclick="document.getElementById('s1').scrollIntoView({behavior:'smooth'})">
+            <span class="toc-n">I</span><span class="toc-t">Cadre réglementaire : fondations et lacunes</span>
+          </div>
+          <div class="toc-item" onclick="document.getElementById('s2').scrollIntoView({behavior:'smooth'})">
+            <span class="toc-n">II</span><span class="toc-t">Analyse comparative internationale</span>
+          </div>
+          <div class="toc-item" onclick="document.getElementById('s3').scrollIntoView({behavior:'smooth'})">
+            <span class="toc-n">III</span><span class="toc-t">Obstacles juridiques et fiscaux</span>
+          </div>
+          <div class="toc-item" onclick="document.getElementById('s4').scrollIntoView({behavior:'smooth'})">
+            <span class="toc-n">IV</span><span class="toc-t">Recommandations pour les praticiens</span>
+          </div>
+          <div class="toc-item" onclick="document.getElementById('s5').scrollIntoView({behavior:'smooth'})">
+            <span class="toc-n">V</span><span class="toc-t">Conclusion</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Key figures -->
+      <div class="wg">
+        <div class="wt">Chiffres clés</div>
+        <div class="kf-grid">
+          <div class="kf-cell"><div class="kf-val">500 Mds $</div><div class="kf-lbl">Green bonds mondiaux 2025</div></div>
+          <div class="kf-cell"><div class="kf-val">45,5 %</div><div class="kf-lbl">Réduction émissions NDC 2030</div></div>
+          <div class="kf-cell"><div class="kf-val">2016</div><div class="kf-lbl">Premier green bond marocain (CDG)</div></div>
+          <div class="kf-cell"><div class="kf-val">1,8 Md MAD</div><div class="kf-lbl">Volume émis à ce jour</div></div>
+          <div class="kf-cell"><div class="kf-val">03/22</div><div class="kf-lbl">Circulaire AMMC de référence</div></div>
+          <div class="kf-cell"><div class="kf-val">2025</div><div class="kf-lbl">Projet de taxonomie verte en cours</div></div>
+        </div>
+      </div>
+
+      <!-- Related articles -->
+      <div class="wg">
+        <div class="wt">Articles liés</div>
+        <div class="rel-item">
+          <img class="rel-thumb" src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=120&q=80" alt="Finance participative"/>
+          <div class="rel-info">
+            <h4><a href="article-finance-participative.html">Finance participative : où en est le Maroc cinq ans après la loi 103-12 ?</a></h4>
+            <span>Dr. Salwa Benali · Finance &amp; Marchés</span>
+          </div>
+        </div>
+        <div class="rel-item">
+          <img class="rel-thumb" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=120&q=80" alt="CFC vs Nairobi"/>
+          <div class="rel-info">
+            <h4><a href="article-cfc-nairobi.html">CFC vs Nairobi : la bataille des hubs financiers africains</a></h4>
+            <span>Dr. Samir Belhaj · Finance &amp; Marchés</span>
+          </div>
+        </div>
+        <div class="rel-item">
+          <img class="rel-thumb" src="https://images.unsplash.com/photo-1489392191049-fc10c97e64b6?w=120&q=80" alt="ZLECAf"/>
+          <div class="rel-info">
+            <h4><a href="article-zlecaf.html">ZLECAf et harmonisation juridique : le pari de l'intégration africaine</a></h4>
+            <span>Dr. Samir Belhaj · Afrique &amp; OHADA</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="wg">
+        <div class="wt">Newsletter</div>
+        <p class="nl-desc">Recevez chaque semaine les analyses juridiques et financières de la rédaction Neybras.</p>
+        <input class="nl-input" type="email" placeholder="votre@email.com"/>
+        <button class="nl-btn">S'abonner</button>
+      </div>
+    </aside>
+  </div><!-- /art-layout -->
+</div></div><!-- /art-wrap -->
+
+<!-- Footer -->
+<footer><div class="container">
+  <div class="ft-grid">
+    <div class="ft-brand">
+      <div class="logo-name">Neybras</div>
+      <div class="logo-tag">Revue juridique &amp; financière</div>
+      <p class="ft-desc">Analyses approfondies du droit des affaires, de la finance de marché, de l'arbitrage et des dynamiques économiques africaines.</p>
+      <div class="ft-soc">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div>
+      <div class="ft-col-title">Rubriques</div>
+      <div class="ft-links">
+        <a href="droit.html">Droit des affaires</a>
+        <a href="finance.html">Finance &amp; Marchés</a>
+        <a href="arbitrage.html">Arbitrage &amp; ADR</a>
+        <a href="afrique.html">Afrique &amp; OHADA</a>
+        <a href="interviews.html">Interviews</a>
+        <a href="tribunes.html">Tribunes</a>
+      </div>
+    </div>
+    <div>
+      <div class="ft-col-title">La revue</div>
+      <div class="ft-links">
+        <a href="#">À propos</a>
+        <a href="#">Comité éditorial</a>
+        <a href="#">Conditions de publication</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html">Soumettre une tribune</a>
+      </div>
+    </div>
+    <div>
+      <div class="ft-col-title">S'abonner</div>
+      <div class="ft-links">
+        <a href="#">Newsletter hebdomadaire</a>
+        <a href="#">Alertes juridiques</a>
+        <a href="#">Partenariats institutionnels</a>
+      </div>
+    </div>
+  </div>
+  <div class="ft-bottom">
+    <div class="ft-copy">© 2026 Neybras Magazine. Tous droits réservés.</div>
+    <div class="ft-legal">
+      <a href="#">Mentions légales</a>
+      <a href="#">Politique de confidentialité</a>
+      <a href="#">CGU</a>
+    </div>
+  </div>
+</div></footer>
+
+<button class="scroll-top" id="scTop" aria-label="Retour en haut"><i class="fas fa-chevron-up"></i></button>
+
+<script>
+// Reading progress
+const prog=document.getElementById('prog');
+const rdCnt=document.getElementById('rdCnt');
+const artText=document.querySelector('.art-text');
+function updProg(){
+  if(!artText)return;
+  const r=artText.getBoundingClientRect();
+  const total=artText.offsetHeight+r.top-window.innerHeight;
+  const scrolled=Math.max(0,-r.top);
+  const pct=total>0?Math.min(100,(scrolled/total)*100):0;
+  prog.style.width=pct+'%';
+  const minLeft=Math.round((1-pct/100)*10);
+  rdCnt.innerHTML=minLeft+'<br>min';
+}
+window.addEventListener('scroll',updProg,{passive:true});
+updProg();
+
+// TOC active tracking
+const sections=['s1','s2','s3','s4','s5'];
+const tocItems=document.querySelectorAll('.toc-item');
+function updToc(){
+  let active=0;
+  sections.forEach((id,i)=>{
+    const el=document.getElementById(id);
+    if(el&&el.getBoundingClientRect().top<160)active=i;
+  });
+  tocItems.forEach((it,i)=>{it.classList.toggle('act',i===active);});
+}
+window.addEventListener('scroll',updToc,{passive:true});
+
+// Scroll top
+const scTop=document.getElementById('scTop');
+window.addEventListener('scroll',()=>{scTop.classList.toggle('vis',window.scrollY>400);},{passive:true});
+scTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+// Copy link
+function copyLink(){navigator.clipboard.writeText(window.location.href).then(()=>{alert('Lien copié !');});}
+document.getElementById('cpyFloat').addEventListener('click',copyLink);
+document.getElementById('cpyBar').addEventListener('click',copyLink);
+
+// Search overlay
+const srchOv=document.getElementById('srchOv');
+const srchInp=document.getElementById('srchInp');
+document.getElementById('btnSrch').addEventListener('click',()=>{srchOv.classList.add('open');srchInp.focus();});
+document.getElementById('srchClose').addEventListener('click',()=>srchOv.classList.remove('open'));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')srchOv.classList.remove('open');});
+</script>
+</body>
+</html>
