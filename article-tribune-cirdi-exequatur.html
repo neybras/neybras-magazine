@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>L'exéquatur des sentences CIRDI en Afrique : vers une harmonisation nécessaire — Neybras Magazine</title>
+<meta name="description" content="L'article 54 de la Convention de Washington promet une exécution automatique des sentences CIRDI. En Afrique, la réalité est tout autre. Analyse des résistances étatiques et propositions d'harmonisation. Par Me Ismaël Kourouma."/>
+<meta name="author" content="Me Ismaël Kourouma"/>
+<meta name="robots" content="index,follow"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<style>
+:root{--bn:#0f1e36;--bn2:#0a1528;--or:#b8922e;--or-lt:#d4a94a;--or-bg:rgba(184,146,46,.08);--or-bd:rgba(184,146,46,.22);--page:#fafafa;--blanc:#ffffff;--gris1:#1a1a1a;--gris2:#2d2d2d;--gris3:#555555;--gris4:#888888;--gris5:#bbbbbb;--brd:#e4e4e4;--brd2:#f0f0f0;--cg:'Cormorant Garamond','Georgia',serif;--pd:'Playfair Display','Georgia',serif;--it:'Inter','Helvetica Neue',sans-serif;--tr:all .22s ease;--sh:0 1px 12px rgba(0,0,0,.07);}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:var(--it);background:var(--page);color:var(--gris1);-webkit-font-smoothing:antialiased;}
+a{text-decoration:none;color:inherit;transition:var(--tr);}
+img{max-width:100%;height:auto;display:block;}
+ul{list-style:none;}
+.container{max-width:1240px;margin:0 auto;padding:0 32px;}
+#prog{position:fixed;top:0;left:0;height:2px;background:var(--or);width:0%;z-index:9999;transition:width .08s linear;}
+.top-bar{background:var(--bn2);border-bottom:1px solid rgba(255,255,255,.06);padding:6px 0;}
+.tb-in{display:flex;justify-content:space-between;align-items:center;}
+.tb-l{display:flex;align-items:center;gap:16px;font-size:10px;color:rgba(255,255,255,.32);}
+.tb-date{color:rgba(184,146,46,.8);font-weight:500;}
+.tb-r{display:flex;align-items:center;gap:16px;}
+.tb-soc{display:flex;gap:12px;}
+.tb-soc a{color:rgba(255,255,255,.28);font-size:11px;}
+.tb-soc a:hover{color:var(--or-lt);}
+.tb-lnk{display:flex;gap:16px;}
+.tb-lnk a{font-size:10px;color:rgba(255,255,255,.3);letter-spacing:.07em;text-transform:uppercase;}
+.tb-lnk a:hover{color:rgba(255,255,255,.65);}
+.site-header{background:var(--bn);position:sticky;top:0;z-index:1000;border-bottom:1px solid rgba(255,255,255,.07);}
+.hd-in{display:flex;align-items:center;justify-content:space-between;padding:10px 0;}
+.logo-wrap{display:flex;align-items:center;gap:12px;}
+.logo-txt{display:flex;flex-direction:column;}
+.logo-name{font-family:var(--it);font-size:16px;font-weight:700;letter-spacing:.2em;color:#fff;text-transform:uppercase;line-height:1;}
+.logo-tag{font-family:var(--cg);font-style:italic;font-size:10.5px;color:rgba(184,146,46,.75);margin-top:2px;}
+.hd-act{display:flex;align-items:center;gap:14px;}
+.btn-srch{background:none;border:none;color:rgba(255,255,255,.4);font-size:14px;cursor:pointer;padding:6px;}
+.btn-abo{border:1px solid rgba(255,255,255,.28);color:rgba(255,255,255,.72);font-size:9.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:8px 18px;border-radius:1px;background:transparent;transition:var(--tr);}
+.btn-abo:hover{border-color:var(--or-lt);color:var(--or-lt);}
+.main-nav{background:var(--bn);border-bottom:1px solid rgba(184,146,46,.3);}
+.nav-in{display:flex;overflow-x:auto;scrollbar-width:none;}
+.nav-in::-webkit-scrollbar{display:none;}
+.nav-a{display:block;font-size:9.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.42);padding:10px 15px;white-space:nowrap;border-bottom:2px solid transparent;margin-bottom:-1px;transition:var(--tr);}
+.nav-a:hover{color:rgba(255,255,255,.82);}
+.nav-a.on{color:#fff;border-bottom-color:var(--or);}
+.nav-a.star{color:rgba(184,146,46,.75);}
+.art-hero{background:var(--blanc);border-bottom:1px solid var(--brd);padding:52px 0 0;}
+.art-hero-inner{max-width:900px;margin:0 auto;padding:0 32px;}
+.breadcrumb{display:flex;align-items:center;gap:7px;font-size:10.5px;color:var(--gris4);margin-bottom:28px;}
+.breadcrumb a{color:var(--gris4);}
+.breadcrumb a:hover{color:var(--gris2);}
+.breadcrumb .bsep{color:var(--gris5);}
+.art-category{display:flex;align-items:center;gap:14px;margin-bottom:22px;}
+.art-cat-line{display:inline-block;width:28px;height:1px;background:var(--or);}
+.art-cat-label{font-size:9.5px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--or);}
+.art-h1{font-family:var(--cg);font-size:clamp(28px,4vw,50px);font-weight:600;color:var(--bn);line-height:1.18;margin-bottom:18px;max-width:800px;}
+.art-deck{font-family:var(--cg);font-size:clamp(15px,2vw,19px);font-style:italic;color:var(--gris3);line-height:1.55;margin-bottom:26px;max-width:740px;}
+.art-meta{display:flex;align-items:center;flex-wrap:wrap;font-size:11.5px;color:var(--gris4);padding:18px 0;border-top:1px solid var(--brd2);border-bottom:1px solid var(--brd2);margin-bottom:38px;}
+.am-author-wrap{display:flex;align-items:center;gap:9px;}
+.am-name{font-weight:600;color:var(--gris2);font-size:12px;}
+.am-dot{color:var(--gris5);margin:0 10px;}
+.am-share-wrap{margin-left:auto;display:flex;align-items:center;gap:8px;}
+.am-sh{width:28px;height:28px;border-radius:50%;border:1px solid var(--brd);display:flex;align-items:center;justify-content:center;color:var(--gris4);font-size:11px;transition:var(--tr);}
+.am-sh:hover{border-color:var(--or);color:var(--or);}
+.art-image-wrap{margin:0 -32px 0;}
+.art-image-wrap img{width:100%;aspect-ratio:16/9;object-fit:cover;}
+.art-image-caption{font-size:10.5px;color:var(--gris4);padding:10px 32px;border-bottom:1px solid var(--brd);background:var(--blanc);}
+.art-wrap{padding:52px 0 72px;}
+.art-layout{display:grid;grid-template-columns:1fr 292px;gap:60px;align-items:start;}
+.art-col{min-width:0;}
+.art-text{font-family:var(--cg);font-size:20px;line-height:1.82;color:var(--gris3);}
+.art-text p{margin-bottom:28px;}
+.art-text .chapeau{font-size:21px;font-weight:500;color:var(--gris2);line-height:1.68;border-left:2px solid var(--or);padding-left:20px;margin-bottom:36px;}
+.art-text h2{font-family:var(--pd);font-size:23px;font-weight:700;color:var(--bn);line-height:1.28;margin:52px 0 20px;padding-top:6px;}
+.art-text h2 span.h2-marker{display:block;width:22px;height:1px;background:var(--or);margin-bottom:14px;}
+.art-text h3{font-family:var(--pd);font-size:18px;font-weight:700;color:var(--gris2);margin:36px 0 14px;}
+.art-text strong{font-weight:600;color:var(--gris2);}
+.art-text ul{padding-left:0;margin-bottom:28px;border-top:1px solid var(--brd2);}
+.art-text ul li{font-size:19px;padding:10px 0 10px 18px;border-bottom:1px solid var(--brd2);position:relative;color:var(--gris3);}
+.art-text ul li::before{content:'';position:absolute;left:0;top:50%;transform:translateY(-50%);width:5px;height:5px;background:var(--or);border-radius:50%;}
+.pull-quote{margin:48px 0;padding:32px 36px 32px 40px;background:#f9f6ef;border-left:3px solid var(--or);}
+.pull-quote blockquote{font-family:var(--cg);font-size:22px;font-style:italic;color:var(--bn);line-height:1.55;margin-bottom:14px;}
+.pull-quote cite{font-size:10.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--or);font-style:normal;}
+.highlight-box{margin:36px 0;padding:24px 28px;background:var(--blanc);border:1px solid var(--brd);border-top:2px solid var(--or);}
+.hb-title{font-size:9px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--or);margin-bottom:16px;display:flex;align-items:center;gap:8px;}
+.highlight-box ul{border-top:none;}
+.highlight-box ul li{font-size:17px;color:var(--gris3);padding:8px 0 8px 18px;border-bottom:1px solid var(--brd2);}
+.highlight-box ul li:last-child{border-bottom:none;}
+.art-table{width:100%;border-collapse:collapse;margin:36px 0;}
+.art-table thead tr{border-bottom:2px solid var(--bn);}
+.art-table th{font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--bn);padding:10px 14px;text-align:left;background:#f5f5f5;}
+.art-table td{padding:12px 14px;border-bottom:1px solid var(--brd2);font-family:var(--cg);font-size:17px;color:var(--gris3);vertical-align:top;}
+.art-table td:first-child{font-weight:600;color:var(--gris2);}
+.art-note{font-size:11.5px;color:var(--gris4);line-height:1.75;padding-top:24px;border-top:1px solid var(--brd);margin-top:44px;}
+.share-bar{display:flex;align-items:center;gap:10px;flex-wrap:wrap;padding:22px 0;border-bottom:1px solid var(--brd);}
+.share-lbl{font-size:9.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--gris4);margin-right:4px;}
+.sh-a{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;font-size:10.5px;font-weight:600;transition:var(--tr);}
+.sh-li{background:#0a66c2;color:#fff;}
+.sh-tw{background:#0f1419;color:#fff;}
+.sh-wa{background:#25d366;color:#fff;}
+.sh-cp{background:transparent;color:var(--gris3);border:1px solid var(--brd);cursor:pointer;}
+.sh-cp:hover{border-color:var(--or);color:var(--or);}
+.author-box{margin:40px 0;padding:28px 32px;background:var(--blanc);border:1px solid var(--brd);border-top:2px solid var(--bn);display:grid;grid-template-columns:68px 1fr;gap:22px;align-items:start;}
+.av-i{border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--it);font-weight:700;color:#fff;flex-shrink:0;}
+.auth-label{font-size:9px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gris4);margin-bottom:5px;}
+.auth-name{font-family:var(--pd);font-size:18px;font-weight:700;color:var(--bn);margin-bottom:3px;}
+.auth-role{font-size:11.5px;color:var(--gris4);margin-bottom:12px;}
+.auth-bio{font-family:var(--cg);font-size:16.5px;color:var(--gris3);line-height:1.7;}
+.auth-links{display:flex;gap:8px;margin-top:14px;}
+.auth-lnk{width:30px;height:30px;border:1px solid var(--brd);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--gris4);font-size:11px;transition:var(--tr);}
+.auth-lnk:hover{border-color:var(--or);color:var(--or);}
+.art-aside{display:flex;flex-direction:column;gap:28px;position:sticky;top:82px;}
+.wg{background:var(--blanc);border:1px solid var(--brd);padding:22px;}
+.wt{font-size:9px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gris2);padding-bottom:10px;margin-bottom:16px;border-bottom:1px solid var(--brd);}
+.toc{display:flex;flex-direction:column;}
+.toc-item{display:flex;align-items:start;gap:12px;padding:10px 0;border-bottom:1px solid var(--brd2);cursor:pointer;transition:var(--tr);}
+.toc-item:last-child{border-bottom:none;padding-bottom:0;}
+.toc-n{font-family:var(--cg);font-size:20px;font-weight:600;color:var(--gris5);line-height:1;flex-shrink:0;width:22px;transition:var(--tr);}
+.toc-t{font-size:11.5px;color:var(--gris3);line-height:1.45;transition:var(--tr);}
+.toc-item:hover .toc-n,.toc-item.act .toc-n{color:var(--or);}
+.toc-item:hover .toc-t,.toc-item.act .toc-t{color:var(--gris1);}
+.toc-item.act{border-left:2px solid var(--or);padding-left:10px;margin-left:-10px;}
+.rel-item{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--brd2);align-items:flex-start;}
+.rel-item:last-child{border-bottom:none;padding-bottom:0;}
+.rel-thumb{width:62px;height:48px;object-fit:cover;flex-shrink:0;}
+.rel-info h4{font-family:var(--pd);font-size:.82rem;font-weight:700;color:var(--gris1);line-height:1.3;margin-bottom:3px;}
+.rel-info h4 a:hover{color:var(--or);}
+.rel-info span{font-size:10px;color:var(--gris5);}
+.nl-desc{font-size:12px;color:var(--gris3);line-height:1.6;margin-bottom:14px;}
+.nl-input{width:100%;padding:10px 14px;border:1px solid var(--brd);font-size:12px;background:var(--page);outline:none;transition:var(--tr);margin-bottom:8px;}
+.nl-input:focus{border-color:var(--or);}
+.nl-btn{width:100%;background:var(--or);color:var(--bn);font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:11px;border:none;cursor:pointer;transition:var(--tr);}
+.nl-btn:hover{background:var(--or-lt);}
+.lire-ensuite{margin:48px 0 0;padding:36px 0 0;border-top:2px solid var(--brd);}
+.le-title{font-size:9.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:var(--gris4);margin-bottom:24px;}
+.le-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;}
+.le-card{border:1px solid var(--brd);background:var(--blanc);padding:20px;}
+.le-cat{font-size:9px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--or);margin-bottom:10px;}
+.le-card h4{font-family:var(--pd);font-size:16px;font-weight:700;color:var(--bn);line-height:1.3;margin-bottom:8px;}
+.le-card h4 a:hover{color:var(--or);}
+.le-card p{font-family:var(--cg);font-size:15px;color:var(--gris4);line-height:1.5;}
+footer{background:var(--bn2);border-top:3px solid rgba(184,146,46,.3);padding:48px 0 28px;}
+.ft-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px;}
+.ft-brand .logo-name{font-size:14px;margin-bottom:6px;}
+.ft-brand .logo-tag{font-size:10px;margin-bottom:14px;}
+.ft-desc{font-size:11.5px;color:rgba(255,255,255,.38);line-height:1.7;margin-bottom:16px;}
+.ft-soc{display:flex;gap:12px;}
+.ft-soc a{width:30px;height:30px;border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.3);font-size:11px;transition:var(--tr);}
+.ft-soc a:hover{border-color:var(--or);color:var(--or);}
+.ft-col-title{font-size:9px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:rgba(184,146,46,.7);margin-bottom:16px;}
+.ft-links{display:flex;flex-direction:column;gap:9px;}
+.ft-links a{font-size:11.5px;color:rgba(255,255,255,.35);transition:var(--tr);}
+.ft-links a:hover{color:rgba(255,255,255,.72);}
+.ft-bottom{border-top:1px solid rgba(255,255,255,.07);padding-top:22px;display:flex;justify-content:space-between;align-items:center;}
+.ft-copy{font-size:10px;color:rgba(255,255,255,.22);}
+.ft-legal{display:flex;gap:20px;}
+.ft-legal a{font-size:10px;color:rgba(255,255,255,.22);}
+.scroll-top{position:fixed;bottom:28px;right:28px;width:40px;height:40px;background:var(--or);color:var(--bn);border:none;cursor:pointer;display:none;align-items:center;justify-content:center;font-size:14px;z-index:999;transition:var(--tr);}
+.scroll-top:hover{background:var(--or-lt);}
+.scroll-top.vis{display:flex;}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+<div class="top-bar"><div class="container"><div class="tb-in">
+  <div class="tb-l"><span class="tb-date">Mercredi 21 Mai 2026</span><span>·</span><span>Casablanca</span><span>·</span><span>Droit · Finance · Arbitrage · Afrique</span></div>
+  <div class="tb-r"><div class="tb-soc"><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a></div><div class="tb-lnk"><a href="contact.html">Contact</a><a href="interviews.html">Interviews</a><a href="tribunes.html">Tribunes</a></div></div>
+</div></div></div>
+
+<header class="site-header"><div class="container"><div class="hd-in">
+  <a href="index.html" class="logo-wrap"><div class="logo-txt"><span class="logo-name">Neybras</span><span class="logo-tag">Le droit en lumière</span></div></a>
+  <div class="hd-act"><button class="btn-srch"><i class="fas fa-search"></i></button><a href="contact.html" class="btn-abo">S'abonner</a></div>
+</div></div>
+<nav class="main-nav"><div class="container"><div class="nav-in">
+  <a href="index.html" class="nav-a">Accueil</a>
+  <a href="droit.html" class="nav-a">Droit des affaires</a>
+  <a href="finance.html" class="nav-a">Finance &amp; Marchés</a>
+  <a href="arbitrage.html" class="nav-a on">Arbitrage &amp; ADR</a>
+  <a href="afrique.html" class="nav-a">Afrique &amp; OHADA</a>
+  <a href="droit-du-sport.html" class="nav-a star">Sport Business</a>
+  <a href="interviews.html" class="nav-a">Interviews</a>
+  <a href="tribunes.html" class="nav-a on">Tribunes</a>
+</div></div></nav></header>
+
+<section class="art-hero"><div class="art-hero-inner">
+  <nav class="breadcrumb"><a href="index.html">Accueil</a><span class="bsep">›</span><a href="tribunes.html">Tribunes</a><span class="bsep">›</span><span>Arbitrage</span></nav>
+  <div class="art-category"><span class="art-cat-line"></span><span class="art-cat-label">Arbitrage · Tribune</span></div>
+  <h1 class="art-h1">L'exéquatur des sentences CIRDI en Afrique : vers une harmonisation nécessaire</h1>
+  <p class="art-deck">L'article 54 de la Convention de Washington promet une reconnaissance quasi automatique des sentences CIRDI dans les États membres. En Afrique, cette promesse se heurte à des résistances étatiques systémiques, à un vide normatif dans l'espace OHADA, et à des conflits de compétence entre juridictions nationales et instances internationales. Il est urgent d'agir.</p>
+  <div class="art-meta">
+    <div class="am-author-wrap"><span class="av-i" style="width:30px;height:30px;background:#1e4a7a;font-size:10px">IK</span><span class="am-name">Me Ismaël Kourouma</span></div>
+    <span class="am-dot">·</span><span>Avocat au barreau de Dakar · Spécialiste OHADA et arbitrage international</span>
+    <span class="am-dot">·</span><span>12 Mai 2026</span>
+    <span class="am-dot">·</span><span><i class="far fa-clock" style="margin-right:4px"></i>11 min de lecture</span>
+    <div class="am-share-wrap"><a href="#" class="am-sh"><i class="fab fa-linkedin-in"></i></a><a href="#" class="am-sh"><i class="fab fa-x-twitter"></i></a></div>
+  </div>
+  <div class="art-image-wrap">
+    <img src="https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&w=1200" alt="Arbitrage international CIRDI — salle d'audience" loading="eager"/>
+    <div class="art-image-caption">L'exécution des sentences d'investissement en Afrique reste un chantier inachevé, entre promesses conventionnelles et résistances étatiques. © Pexels</div>
+  </div>
+</div></section>
+
+<div class="container"><div class="art-wrap"><div class="art-layout">
+  <article class="art-col">
+    <div class="art-text">
+
+      <p class="chapeau">Adoptée à Washington en 1965 et entrée en vigueur en 1966, la Convention pour le Règlement des Différends relatifs aux Investissements entre États et Ressortissants d'autres États a été conçue comme la solution définitive au problème de l'exécution des sentences arbitrales contre les États. Son article 54 stipule que chaque État contractant « reconnaît toute sentence rendue dans le cadre de la présente Convention comme obligatoire et assure l'exécution sur son territoire des obligations pécuniaires que la sentence impose ». Soixante ans plus tard, en Afrique, cette promesse reste en grande partie non tenue.</p>
+
+      <p>Le continent africain compte 53 États membres du CIRDI — une adhésion quasi universelle qui témoigne de l'attractivité formelle du mécanisme pour attirer les investissements étrangers. Mais entre la signature de la Convention et l'exécution effective d'une sentence, l'écart est abyssal. Des États débiteurs soulèvent des exceptions d'immunité souveraine, des juridictions nationales accueillent des recours en annulation pourtant exclus par la Convention, des procédures d'exéquatur s'étirent sur des années. La crédibilité du système d'arbitrage d'investissement pour l'Afrique est directement en jeu.</p>
+
+      <h2 id="sec1"><span class="h2-marker"></span>I. La promesse non tenue de l'article 54 : théorie versus pratique africaine</h2>
+
+      <h3>1.1 Le mécanisme d'exéquatur CIRDI : une simplicité trompeuse</h3>
+
+      <p>La Convention de Washington a instauré un mécanisme d'exéquatur délibérément simple. L'investisseur bénéficiaire d'une sentence CIRDI doit présenter une copie certifiée de la sentence aux juridictions compétentes de l'État débiteur, qui ont l'obligation de la reconnaître et d'en assurer l'exécution comme si elle était une décision définitive de leur propre juridiction. Aucun contrôle de fond n'est prévu : les causes de refus d'exéquatur prévues par la Convention de New York de 1958 — contrariété à l'ordre public, violation des droits de la défense, incompétence du tribunal — ne s'appliquent pas aux sentences CIRDI.</p>
+
+      <p>La seule limitation admise par la Convention est l'immunité d'exécution : les États peuvent opposer leur immunité souveraine sur certains actifs dits « affectés à l'exercice de missions de service public ». Cette exception, d'interprétation nationale, est en pratique la brèche principale par laquelle les États africains résistent à l'exécution. Dès lors que l'investisseur tente de saisir des actifs étatiques — comptes bancaires, biens immobiliers, créances — l'État invoque l'immunité, et les juridictions nationales, saisies de ces demandes, statuent selon leur propre droit — avec les biais nationaux que cela implique.</p>
+
+      <h3>1.2 Les résistances étatiques : exemples concrets</h3>
+
+      <p>Les cas de résistance africaine à l'exécution de sentences CIRDI sont suffisamment nombreux et documentés pour que l'on puisse parler d'une pathologie systémique. En République Démocratique du Congo, l'affaire <em>Swembeck Group v. DRC</em> (ICSID Case No. ARB/02/28) a donné lieu à une sentence de 2009 que la RDC n'a toujours pas exécutée en 2026, invoquant successivement des vices de procédure puis l'immunité souveraine. L'investisseur, une entreprise belge, a tenté de saisir des actifs congolais en Belgique, au Luxembourg et aux États-Unis — avec des résultats partiels obtenus en Belgique grâce aux règles européennes de droit international privé, et des échecs répétés au Congo même.</p>
+
+      <p>Au Nigeria, l'affaire <em>Process &amp; Industrial Developments Ltd v. Nigeria</em> (PCA arbitrage, non CIRDI mais illustratif) a révélé la vulnérabilité des investisseurs face à des gouvernements déterminés à résister. L'État nigérian a engagé des procédures judiciaires parallèles devant les tribunaux fédéraux de Lagos pour tenter de bloquer l'exécution de la sentence au Royaume-Uni, invoquant des allégations de corruption dans la procédure d'arbitrage — allégations finalement rejetées par la Commercial Court de Londres en 2023, après six ans de procédures supplémentaires.</p>
+
+      <p>Au Ghana, l'affaire <em>Balkan Energy v. Ghana</em> (ICSID Case No. ARB/10/3) a illustré un autre mode de résistance : l'État a engagé une procédure en annulation devant le comité ad hoc du CIRDI — mécanisme interne de contrôle prévu par la Convention — en soulevant des motifs d'annulation dilatoires. La procédure d'annulation a pris quatre ans, pendant lesquels l'exécution était suspendue de droit.</p>
+
+      <div class="highlight-box">
+        <div class="hb-title"><i class="fas fa-exclamation-circle"></i> Modes de résistance des États africains à l'exécution CIRDI</div>
+        <ul>
+          <li><strong>Invocation de l'immunité souveraine</strong> — Sur les comptes bancaires centraux, les créances pétrolières, les biens diplomatiques</li>
+          <li><strong>Procédures d'annulation dilatoires</strong> — Recours au comité ad hoc du CIRDI sur des motifs artificiels pour suspendre l'exécution</li>
+          <li><strong>Procédures judiciaires parallèles</strong> — Recours aux juridictions nationales pour tenter de bloquer l'exécution dans des États tiers</li>
+          <li><strong>Pressions politiques sur les créanciers</strong> — Négociations bilatérales imposées aux investisseurs sous menace de mesures de rétorsion économique</li>
+          <li><strong>Insolvabilité stratégique</strong> — Transfert des actifs saisissables vers des entités paraétatiques non couvertes par la sentence</li>
+        </ul>
+      </div>
+
+      <h2 id="sec2"><span class="h2-marker"></span>II. L'espace OHADA : une lacune normative préoccupante</h2>
+
+      <h3>2.1 L'absence d'Acte uniforme sur l'arbitrage d'investissement</h3>
+
+      <p>L'Organisation pour l'Harmonisation en Afrique du Droit des Affaires (OHADA) a accompli un travail remarquable de codification du droit commercial africain depuis 1993 : droit commercial général, droit des sociétés, droit des sûretés, procédures collectives, arbitrage commercial. Mais cet édifice présente un angle mort critique : l'arbitrage d'investissement. L'Acte uniforme relatif au droit de l'arbitrage de 2017 régit l'arbitrage commercial entre parties privées. Il ne s'applique pas à l'arbitrage d'investissement impliquant un État, régi par la Convention de Washington pour les affaires CIRDI, ou par des traités bilatéraux d'investissement (TBI) pour les autres.</p>
+
+      <p>Cette lacune a des conséquences pratiques immédiates. Lorsqu'une sentence CIRDI doit être exécutée dans un État membre de l'OHADA — le Sénégal, la Côte d'Ivoire, le Cameroun, la RDC — les juridictions nationales saisies de la demande d'exéquatur n'ont pas de cadre normatif unifié pour traiter cette demande. Chaque État applique son propre droit interne, avec des résultats hétérogènes. La Côte d'Ivoire applique les règles du Code de procédure civile hérité du droit français. Le Cameroun combine des éléments de droit civil francophone et de common law anglophone dans ses régions anglophones. Le Sénégal dispose d'une jurisprudence encore peu développée sur le sujet.</p>
+
+      <h3>2.2 Les conflits de compétence entre juridictions nationales et CIRDI</h3>
+
+      <p>La Convention de Washington a prévu un mécanisme de contrôle interne : le comité ad hoc d'annulation. Elle n'a pas prévu les cas où les juridictions nationales des États membres tenteraient d'interférer avec le processus d'exécution. Or, plusieurs États africains ont vu leurs juridictions nationales se saisir de demandes d'annulation ou de suspension de sentences CIRDI, sur le fondement de la législation nationale — alors même que la Convention de Washington exclut tout contrôle judiciaire national des sentences CIRDI.</p>
+
+      <p>Ce phénomène crée ce que les spécialistes appellent un « dialogue de sourds » : les tribunaux CIRDI affirment l'exclusivité de leur contrôle, les juridictions nationales revendiquent leur souveraineté juridictionnelle, et l'investisseur se retrouve pris en étau entre deux systèmes qui s'ignorent mutuellement. La CCJA elle-même — juridiction supranationale de l'OHADA — ne dispose pas d'une compétence explicite pour trancher ces conflits de compétence entre juridictions nationales des États membres et le système CIRDI.</p>
+
+      <div class="pull-quote">
+        <blockquote>« L'article 54 de la Convention de Washington est l'une des clauses les mieux rédigées du droit international des investissements. Le problème n'est pas la norme — c'est l'absence de mécanisme coercitif africain pour la faire respecter. »</blockquote>
+        <cite>— Me Ismaël Kourouma, Avocat au barreau de Dakar</cite>
+      </div>
+
+      <h2 id="sec3"><span class="h2-marker"></span>III. Propositions d'harmonisation</h2>
+
+      <h3>3.1 Un protocole additionnel OHADA-CIRDI</h3>
+
+      <p>La solution la plus ambitieuse et la plus structurante serait la négociation d'un protocole additionnel entre l'OHADA et le CIRDI (Centre International pour le Règlement des Différends relatifs aux Investissements, filiale du Groupe Banque mondiale), définissant les modalités d'exécution des sentences CIRDI dans l'espace OHADA. Ce protocole pourrait s'inspirer du modèle des accords de reconnaissance mutuelle existant entre certaines organisations régionales et le CIRDI, en précisant notamment : la définition des actifs couverts et non couverts par l'immunité souveraine dans l'espace OHADA, les délais maximaux de procédure d'exéquatur (proposés à quatre-vingt-dix jours), et la désignation d'une juridiction de premier recours en cas de litige sur l'exécution.</p>
+
+      <p>Ce protocole aurait l'avantage de créer un cadre normatif unifié pour les 17 États membres de l'OHADA, remplaçant les 17 régimes nationaux hétérogènes actuels par un seul régime harmonisé. Il renforcerait la prévisibilité pour les investisseurs étrangers et la crédibilité des engagements pris par les États signataires dans leurs traités bilatéraux d'investissement.</p>
+
+      <h3>3.2 La création d'une chambre spécialisée à la CCJA</h3>
+
+      <p>La Cour Commune de Justice et d'Arbitrage (CCJA) de l'OHADA, dont le siège est à Abidjan, est la juridiction supranationale compétente pour trancher les litiges sur l'interprétation et l'application des Actes uniformes. Sa compétence arbitrale est reconnue et appréciée dans l'espace OHADA. Il serait logique d'étendre sa compétence aux litiges relatifs à l'exécution des sentences d'investissement dans les États membres, en créant une chambre spécialisée en arbitrage d'investissement au sein de la CCJA.</p>
+
+      <p>Cette chambre serait composée de juges et d'arbitres ayant une expertise reconnue en droit international des investissements. Elle statuerait sur les demandes d'exéquatur des sentences CIRDI dans les États membres de l'OHADA, appliquant des règles uniformes et garantissant des délais prévisibles. Elle jouerait également un rôle préventif : en cas de conflit de compétence entre une juridiction nationale et le CIRDI, elle serait habilitée à trancher rapidement sur la question de compétence, évitant ainsi des années de procédures parallèles contradictoires.</p>
+
+      <h3>3.3 La formation des magistrats africains au droit international des investissements</h3>
+
+      <p>Les résistances étatiques à l'exécution des sentences CIRDI ne sont pas toutes le fruit d'une mauvaise volonté politique. Une partie significative tient à la méconnaissance, par les magistrats chargés de traiter les demandes d'exéquatur, des spécificités du droit international des investissements et de la Convention de Washington. Un juge du tribunal de grande instance de Kinshasa ou de Douala, saisi d'une demande d'exéquatur d'une sentence CIRDI rédigée en anglais et portant sur des montants en milliards de dollars, n'a souvent reçu aucune formation sur le sujet.</p>
+
+      <table class="art-table">
+        <thead><tr><th>Proposition</th><th>Acteur porteur</th><th>Horizon</th><th>Bénéfice attendu</th></tr></thead>
+        <tbody>
+          <tr><td>Protocole additionnel OHADA-CIRDI</td><td>Conseil des Ministres OHADA + Banque mondiale</td><td>3-5 ans</td><td>Harmonisation des régimes nationaux d'exéquatur</td></tr>
+          <tr><td>Chambre spécialisée à la CCJA</td><td>CCJA / Conseil des Ministres OHADA</td><td>2-3 ans</td><td>Juridiction supranationale de référence</td></tr>
+          <tr><td>Formation des magistrats</td><td>ERSUMA / CIRDI / BID</td><td>12-18 mois</td><td>Réduction des résistances techniques</td></tr>
+          <tr><td>Définition harmonisée de l'immunité souveraine</td><td>Commission OHADA</td><td>2-4 ans</td><td>Prévisibilité pour les investisseurs</td></tr>
+        </tbody>
+      </table>
+
+      <p>L'École Régionale Supérieure de la Magistrature (ERSUMA) de Porto-Novo, rattachée à l'OHADA, est l'institution idéale pour porter ce programme de formation. En partenariat avec le CIRDI, l'Institut du Droit des Nations Unies (UNITAR) et les cabinets d'arbitrage international présents en Afrique, elle pourrait délivrer des formations certifiantes en droit international des investissements à destination des magistrats, greffiers et huissiers des États membres de l'OHADA.</p>
+
+      <h2 id="sec4"><span class="h2-marker"></span>IV. Conclusion : l'Afrique doit être actrice, pas seulement défenderesse</h2>
+
+      <p>Le débat sur l'exéquatur des sentences CIRDI en Afrique est souvent présenté comme un conflit entre investisseurs étrangers désireux d'imposer leurs droits et États africains soucieux de préserver leur souveraineté. Cette présentation est réductrice et, surtout, contre-productive pour les intérêts africains à long terme.</p>
+
+      <p>Le vrai enjeu est la crédibilité de l'Afrique comme destination d'investissement. Les investisseurs institutionnels mondiaux — fonds de pension, compagnies d'assurance, fonds souverains — disposent d'un choix mondial de destinations. Lorsqu'ils évaluent une opportunité africaine, ils intègrent dans leur modèle le risque d'arbitrage et le risque d'exécution. Un environnement où les sentences CIRDI ne sont pas exécutées augmente le coût du capital pour tous les projets africains, indépendamment de leur mérite. C'est l'Afrique elle-même qui paie le prix de cette réputation.</p>
+
+      <p>La solution n'est pas de subordonner la souveraineté africaine aux intérêts des investisseurs étrangers. Elle est de construire un cadre africain d'arbitrage d'investissement — ancré dans les institutions comme l'OHADA et la CCJA, défini selon des standards africains adaptés aux réalités continentales — qui offre des garanties crédibles à la fois aux investisseurs et aux États. L'Afrique doit être actrice de la gouvernance de l'arbitrage international, pas seulement défenderesse. Cela commence par la réforme de l'exéquatur des sentences CIRDI dans l'espace OHADA.</p>
+
+    </div>
+
+    <div class="share-bar">
+      <span class="share-lbl">Partager</span>
+      <a href="#" class="sh-a sh-li"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+      <a href="#" class="sh-a sh-tw"><i class="fab fa-x-twitter"></i> Twitter</a>
+      <a href="#" class="sh-a sh-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <button class="sh-a sh-cp" id="copyLink"><i class="fas fa-link"></i> Copier le lien</button>
+    </div>
+
+    <div class="author-box">
+      <span class="av-i" style="width:68px;height:68px;background:#1e4a7a;font-size:22px">IK</span>
+      <div>
+        <div class="auth-label">À propos de l'auteur</div>
+        <div class="auth-name">Me Ismaël Kourouma</div>
+        <div class="auth-role">Avocat au barreau de Dakar · Spécialiste OHADA et arbitrage international d'investissement</div>
+        <div class="auth-bio">Me Ismaël Kourouma est avocat inscrit au barreau de Dakar, spécialisé en droit OHADA et en arbitrage international d'investissement. Il a représenté des États africains et des investisseurs étrangers dans des procédures CIRDI, CCI et CCJA portant sur des montants cumulés supérieurs à deux milliards de dollars. Ancien juriste senior à la Banque Africaine de Développement, il intervient régulièrement comme conférencier à l'ERSUMA et comme expert auprès de la Commission de l'Union africaine sur les questions de droit des investissements.</div>
+        <div class="auth-links"><a href="#" class="auth-lnk"><i class="fab fa-linkedin-in"></i></a><a href="contact.html" class="auth-lnk"><i class="fas fa-envelope"></i></a></div>
+      </div>
+    </div>
+
+    <div class="art-note">
+      <p><strong>Sources :</strong> Convention CIRDI (Convention de Washington, 1965) · CIRDI, Caseload Statistics 2025 · OHADA, Acte uniforme relatif au droit de l'arbitrage (2017) · CCJA, Rapport d'activité 2024-2025 · ERSUMA, Programmes de formation 2025 · Swembeck Group v. DRC (ICSID Case No. ARB/02/28) · Balkan Energy v. Ghana (ICSID Case No. ARB/10/3) · Process &amp; Industrial Developments Ltd v. Nigeria (PCA Case No. 2012-07) · Commercial Court of England and Wales, P&amp;ID v. Federal Republic of Nigeria [2023] EWHC 2638.</p>
+    </div>
+
+    <div class="lire-ensuite">
+      <div class="le-title">À lire ensuite</div>
+      <div class="le-grid">
+        <div class="le-card">
+          <div class="le-cat">Arbitrage &amp; ADR</div>
+          <h4><a href="article-cirdi-maroc.html">CIRDI et investissements post-ZLECAf : nouveaux défis pour le Maroc</a></h4>
+          <p>Comment le Maroc se positionne dans le paysage de l'arbitrage d'investissement africain à l'heure de la ZLECAf.</p>
+        </div>
+        <div class="le-card">
+          <div class="le-cat">Afrique &amp; OHADA</div>
+          <h4><a href="article-ohada-suretes.html">La réforme du droit des sûretés OHADA : ce qui change pour les financiers</a></h4>
+          <p>L'Acte uniforme révisé sur les sûretés transforme le paysage du financement en Afrique francophone.</p>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <aside class="art-aside">
+    <div class="wg">
+      <div class="wt">Table des matières</div>
+      <div class="toc">
+        <div class="toc-item act" onclick="document.getElementById('sec1').scrollIntoView({behavior:'smooth'})"><span class="toc-n">I</span><span class="toc-t">La promesse non tenue de l'article 54</span></div>
+        <div class="toc-item" onclick="document.getElementById('sec2').scrollIntoView({behavior:'smooth'})"><span class="toc-n">II</span><span class="toc-t">L'espace OHADA : une lacune normative</span></div>
+        <div class="toc-item" onclick="document.getElementById('sec3').scrollIntoView({behavior:'smooth'})"><span class="toc-n">III</span><span class="toc-t">Propositions d'harmonisation</span></div>
+        <div class="toc-item" onclick="document.getElementById('sec4').scrollIntoView({behavior:'smooth'})"><span class="toc-n">IV</span><span class="toc-t">Conclusion : l'Afrique actrice</span></div>
+      </div>
+    </div>
+    <div class="wg">
+      <div class="wt">Articles liés</div>
+      <div class="rel-item">
+        <img src="https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&w=120" class="rel-thumb" alt="Arbitrage"/>
+        <div class="rel-info"><h4><a href="article-ppp-afrique.html">PPP en Afrique : pourquoi 60 % des projets échouent</a></h4><span>Arbitrage · 13 min</span></div>
+      </div>
+      <div class="rel-item">
+        <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&w=120" class="rel-thumb" alt="OHADA"/>
+        <div class="rel-info"><h4><a href="article-ohada-suretes.html">La réforme du droit des sûretés OHADA</a></h4><span>OHADA · 11 min</span></div>
+      </div>
+    </div>
+    <div class="wg">
+      <div class="wt">Newsletter</div>
+      <p class="nl-desc">Analyses arbitrage &amp; droit africain chaque semaine.</p>
+      <input class="nl-input" type="email" placeholder="votre@email.com"/>
+      <button class="nl-btn">S'inscrire</button>
+    </div>
+  </aside>
+</div></div></div>
+
+<footer><div class="container">
+  <div class="ft-grid">
+    <div class="ft-brand"><div class="logo-name">Neybras</div><div class="logo-tag">Le droit en lumière</div><p class="ft-desc">La référence francophone en droit des affaires, finance, arbitrage international et droit africain.</p><div class="ft-soc"><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-x-twitter"></i></a></div></div>
+    <div><div class="ft-col-title">Rubriques</div><div class="ft-links"><a href="droit.html">Droit des affaires</a><a href="finance.html">Finance &amp; Marchés</a><a href="arbitrage.html">Arbitrage &amp; ADR</a><a href="afrique.html">Afrique &amp; OHADA</a><a href="droit-du-sport.html">Sport Business</a></div></div>
+    <div><div class="ft-col-title">Magazine</div><div class="ft-links"><a href="interviews.html">Interviews</a><a href="tribunes.html">Tribunes</a><a href="analyses.html">Analyses</a></div></div>
+    <div><div class="ft-col-title">À propos</div><div class="ft-links"><a href="contact.html">Contact</a><a href="a-propos.html">À propos</a><a href="mentions-legales.html">Mentions légales</a></div></div>
+  </div>
+  <div class="ft-bottom"><span class="ft-copy">© 2026 Neybras Magazine · Boulevard Zerktouni, Casablanca, Maroc 20000</span><div class="ft-legal"><a href="mentions-legales.html">Mentions légales</a><a href="contact.html">Contact</a></div></div>
+</div></footer>
+<button class="scroll-top" id="scrollTop"><i class="fas fa-arrow-up"></i></button>
+<script>
+const prog=document.getElementById('prog');
+window.addEventListener('scroll',()=>{const art=document.querySelector('.art-text');if(!art)return;prog.style.width=Math.min(100,(Math.max(0,-art.getBoundingClientRect().top)/art.offsetHeight)*100)+'%';});
+document.getElementById('copyLink').addEventListener('click',()=>{navigator.clipboard.writeText(window.location.href).then(()=>{const btn=document.getElementById('copyLink');const o=btn.innerHTML;btn.innerHTML='<i class="fas fa-check"></i> Copié !';setTimeout(()=>btn.innerHTML=o,2000);});});
+const st=document.getElementById('scrollTop');
+window.addEventListener('scroll',()=>st.classList.toggle('vis',window.scrollY>400));
+st.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+</script>
+<script>
+(function(){var j=['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'],m=['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'],d=new Date(),s=j[d.getDay()]+' '+d.getDate()+' '+m[d.getMonth()]+' '+d.getFullYear();document.querySelectorAll('.tb-date').forEach(function(el){var ic=el.querySelector('i');if(ic){el.innerHTML='';el.appendChild(ic);el.appendChild(document.createTextNode(' '+s));}else{el.textContent=s;}});})();
+</script>
+</body>
+</html>
