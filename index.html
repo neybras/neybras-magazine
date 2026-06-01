@@ -704,9 +704,7 @@ ul{list-style:none}
 .inf-sub{font-size:11px;color:rgba(255,255,255,.25);margin-top:5px;font-style:italic;font-family:var(--cg)}
 @media(max-width:680px){.influence-grid{grid-template-columns:repeat(2,1fr)}}
 </style>
-<!-- Google Analytics GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');</script></head>
+</head>
 <body>
 
 <!-- ═══ TOP BAR ═══ -->
@@ -852,7 +850,7 @@ ul{list-style:none}
   <!-- 3 articles vedettes en bas du hero -->
   <div class="container" style="position:relative;z-index:2">
     <div class="hero-features reveal">
-      <a href="article-cdm2030.html" class="hf-item hf-main">
+      <a href="article-cdm2030-juridique.html" class="hf-item hf-main">
         <span class="tag t-sport">Droit du Sport · Phare</span>
         <h3>Coupe du Monde 2030 au Maroc : contrats, fiscalité, droits TV et responsabilité des parties prenantes</h3>
         <div class="hf-meta"><span>Me Amine Lahlou</span><span>·</span><span><i class="far fa-clock"></i> 14 min</span><span>·</span><span>18 mai 2026</span></div>
@@ -1860,7 +1858,7 @@ const co=new IntersectionObserver((entries)=>{
 document.querySelectorAll('[data-target]').forEach(el=>co.observe(el));
 
 /* Newsletter */
-document.querySelectorAll('.btn-nl,.nl-form button').forEach(btn=>{
+document.querySelectorAll('.btn-nl').forEach(btn=>{
   btn.addEventListener('click',e=>{
     e.preventDefault();
     const f=btn.closest('form,.nl-w');
