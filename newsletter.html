@@ -1,61 +1,155 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Newsletter — Neybras Magazine</title>
-<meta name="description" content="Abonnez-vous à notre newsletter — Neybras Magazine, le média qui connecte les idées aux décideurs."/>
-<meta name="robots" content="noindex,follow"/>
+<meta name="description" content="Abonnez-vous à la newsletter de Neybras Magazine — analyses juridiques, décryptages financiers et jurisprudence chaque semaine."/>
+<meta name="robots" content="index,follow"/>
 <link rel="canonical" href="https://www.neybras-magazine.com/newsletter.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Newsletter — Neybras Magazine"/>
+<meta property="og:description" content="Analyses juridiques, décryptages financiers et jurisprudence livrés chaque lundi dans votre boîte mail."/>
+<meta property="og:image" content="https://www.neybras-magazine.com/images/og-neybras-default.png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
 <style>
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Inter',sans-serif;background:#fafafa;color:#1a1a1a;min-height:100vh;display:flex;flex-direction:column}
-a{text-decoration:none;color:inherit}
-.hd{background:#0f1e36;padding:14px 32px;display:flex;align-items:center;gap:14px}
-.hd-name{font-size:15px;font-weight:700;letter-spacing:.18em;color:#fff;text-transform:uppercase}
-.hd-tag{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:11px;color:rgba(184,146,46,.8)}
-.main{flex:1;display:flex;align-items:center;justify-content:center;padding:80px 32px;text-align:center}
-.card{max-width:520px}
-.badge{display:inline-block;font-size:10px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#b8922e;border:1px solid rgba(184,146,46,.35);padding:5px 14px;margin-bottom:28px}
-h1{font-family:'Cormorant Garamond',serif;font-size:clamp(28px,5vw,44px);font-weight:600;color:#0f1e36;line-height:1.2;margin-bottom:16px}
-.sub{font-size:15px;color:#555;line-height:1.7;margin-bottom:36px}
-.btn{display:inline-block;background:#0f1e36;color:#fff;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:12px 28px;border-radius:1px;transition:background .2s}
-.btn:hover{background:#1a3355}
-.ft{background:#0a1528;padding:16px 32px;text-align:center;font-size:11px;color:rgba(255,255,255,.25)}
+:root{--bn:#0f1e36;--bn2:#0a1528;--or:#b8922e;--or-lt:#d4a94a;--or-bd:rgba(184,146,46,.22);--brd:#e4e4e4;--gris3:#555;--gris4:#888;--page:#fafafa;--it:'Inter','Helvetica Neue',sans-serif;--cg:'Cormorant Garamond','Georgia',serif}
+body{font-family:var(--it);background:var(--page);color:#1a1a1a;min-height:100vh;display:flex;flex-direction:column;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit;transition:all .2s}
+
+/* ── HEADER ── */
+.site-header{background:var(--bn);border-bottom:1px solid rgba(255,255,255,.07)}
+.hd-in{max-width:1240px;margin:0 auto;padding:10px 32px;display:flex;align-items:center;justify-content:space-between}
+.logo-wrap{display:flex;align-items:center;gap:12px}
+.logo-name{font-size:16px;font-weight:700;letter-spacing:.2em;color:#fff;text-transform:uppercase;line-height:1}
+.logo-tag{font-family:var(--cg);font-style:italic;font-size:10.5px;color:rgba(184,146,46,.75);letter-spacing:.05em;margin-top:2px}
+.btn-home{border:1px solid rgba(255,255,255,.28);color:rgba(255,255,255,.72);font-size:9.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:8px 18px;border-radius:1px;background:transparent;transition:all .2s}
+.btn-home:hover{border-color:var(--or-lt);color:var(--or-lt)}
+
+/* ── HERO ── */
+.hero{flex:1;display:flex;align-items:center;justify-content:center;padding:80px 32px}
+.card{max-width:540px;width:100%;text-align:center}
+.pre{font-family:var(--it);font-size:9.5px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--or);margin-bottom:20px;display:flex;align-items:center;justify-content:center;gap:12px}
+.pre::before,.pre::after{content:'';width:28px;height:1px;background:var(--or-bd)}
+h1{font-family:var(--cg);font-size:clamp(34px,5vw,52px);font-weight:400;color:var(--bn);line-height:1.18;margin-bottom:14px}
+h1 em{font-style:italic;color:var(--or)}
+.sub{font-family:var(--cg);font-size:17px;color:var(--gris3);line-height:1.7;margin-bottom:10px}
+.ava{font-family:var(--it);font-size:12px;color:var(--gris4);margin-bottom:36px}
+.ava i{color:var(--or);margin-right:4px}
+
+/* ── FORM ── */
+.nl-form{display:flex;max-width:460px;margin:0 auto 14px}
+.nl-form input[type="email"]{
+  flex:1;padding:13px 16px;
+  border:1px solid var(--brd);border-right:none;
+  background:#fff;color:#1a1a1a;
+  font-size:13px;font-family:var(--it);
+  outline:none;border-radius:1px 0 0 1px;
+  transition:border-color .2s
+}
+.nl-form input[type="email"]:focus{border-color:var(--or)}
+.nl-form input[type="email"]::placeholder{color:var(--gris4)}
+.nl-form button{
+  padding:13px 24px;background:var(--bn);color:#fff;
+  font-family:var(--it);font-size:10px;font-weight:700;
+  letter-spacing:.14em;text-transform:uppercase;
+  border:none;cursor:pointer;
+  border-radius:0 1px 1px 0;transition:background .2s;
+  white-space:nowrap
+}
+.nl-form button:hover{background:#1a3355}
+.note{font-family:var(--it);font-size:10.5px;color:var(--gris4);text-align:center}
+.note a{color:var(--gris4);border-bottom:1px solid var(--brd)}
+.note a:hover{color:var(--or);border-color:var(--or)}
+
+/* ── AVANTAGES ── */
+.benefits{display:flex;flex-direction:column;gap:10px;margin:40px auto 0;max-width:380px;text-align:left}
+.bitem{display:flex;align-items:start;gap:12px;font-family:var(--cg);font-size:16px;color:var(--gris3);line-height:1.55}
+.bitem i{color:var(--or);margin-top:3px;flex-shrink:0}
+
+/* ── FOOTER ── */
+.site-footer{background:var(--bn2);padding:18px 32px;text-align:center;font-family:var(--it);font-size:10.5px;color:rgba(255,255,255,.22)}
+
+/* ── SUCCESS (Formspree redirect) ── */
+@media(max-width:600px){
+  .nl-form{flex-direction:column}
+  .nl-form input[type="email"]{border-right:1px solid var(--brd);border-radius:1px;margin-bottom:8px}
+  .nl-form button{border-radius:1px}
+  .hd-in{padding:10px 18px}
+}
 </style>
 </head>
 <body>
-<header class="hd">
-  <a href="index.html" style="display:flex;align-items:center;gap:12px">
-    <svg width="36" height="36" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-      <defs><clipPath id="c"><circle cx="50" cy="50" r="43"/></clipPath>
-        <pattern id="v" x="0" y="0" width="5" height="100" patternUnits="userSpaceOnUse"><line x1="2.5" y1="0" x2="2.5" y2="100" stroke="#c9a84c" stroke-width="2"/></pattern>
-        <pattern id="d" x="0" y="0" width="6" height="6" patternUnits="userSpaceOnUse"><line x1="0" y1="6" x2="6" y2="0" stroke="#c9a84c" stroke-width="2"/></pattern>
-        <pattern id="h" x="0" y="0" width="100" height="5" patternUnits="userSpaceOnUse"><line x1="0" y1="2.5" x2="100" y2="2.5" stroke="#c9a84c" stroke-width="2"/></pattern>
-      </defs>
-      <circle cx="50" cy="50" r="43" fill="none" stroke="#c9a84c" stroke-width="2.5"/>
-      <g clip-path="url(#c)">
-        <polygon points="7,5 27,5 27,95 7,95" fill="url(#v)"/>
-        <polygon points="27,5 40,5 73,95 60,95" fill="url(#d)"/>
-        <polygon points="73,5 93,5 93,95 73,95" fill="url(#h)"/>
-      </g>
-    </svg>
-    <div>
-      <div class="hd-name">Neybras Magazine</div>
-      <div class="hd-tag">Le média qui connecte les idées aux décideurs</div>
-    </div>
-  </a>
+
+<header class="site-header">
+  <div class="hd-in">
+    <a href="index.html" class="logo-wrap" aria-label="Neybras Magazine — Accueil">
+      <svg width="40" height="40" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <clipPath id="c1"><circle cx="50" cy="50" r="43"/></clipPath>
+          <pattern id="v1" x="0" y="0" width="5" height="100" patternUnits="userSpaceOnUse"><line x1="2.5" y1="0" x2="2.5" y2="100" stroke="#c9a84c" stroke-width="2"/></pattern>
+          <pattern id="d1" x="0" y="0" width="6" height="6" patternUnits="userSpaceOnUse"><line x1="0" y1="6" x2="6" y2="0" stroke="#c9a84c" stroke-width="2"/></pattern>
+          <pattern id="h1" x="0" y="0" width="100" height="5" patternUnits="userSpaceOnUse"><line x1="0" y1="2.5" x2="100" y2="2.5" stroke="#c9a84c" stroke-width="2"/></pattern>
+        </defs>
+        <circle cx="50" cy="50" r="43" fill="none" stroke="#c9a84c" stroke-width="2.5"/>
+        <g clip-path="url(#c1)">
+          <polygon points="7,5 27,5 27,95 7,95" fill="url(#v1)"/>
+          <polygon points="27,5 40,5 73,95 60,95" fill="url(#d1)"/>
+          <polygon points="73,5 93,5 93,95 73,95" fill="url(#h1)"/>
+        </g>
+      </svg>
+      <div>
+        <div class="logo-name">Neybras Magazine</div>
+        <div class="logo-tag">Le média qui connecte les idées aux décideurs</div>
+      </div>
+    </a>
+    <a href="index.html" class="btn-home">← Accueil</a>
+  </div>
 </header>
-<main class="main">
+
+<main class="hero">
   <div class="card">
-    <div class="badge">En cours de publication</div>
-    <h1>Abonnez-vous à notre newsletter</h1>
-    <p class="sub">Nos analyses juridiques et financières livrées chaque semaine dans votre boîte mail. Cette page sera bientôt disponible.</p>
-    <a href="index.html" class="btn">Retour à l'accueil</a>
+    <div class="pre">Newsletter hebdomadaire</div>
+    <h1>Ne manquez aucune<br/><em>analyse stratégique.</em></h1>
+    <p class="sub">Chaque semaine, nos experts sélectionnent les analyses juridiques et financières qui comptent pour les décideurs du Maroc et d'Afrique.</p>
+    <p class="ava"><i class="fas fa-users"></i> Rejoignez nos abonnés · Gratuit · Désinscription immédiate</p>
+
+    <form class="nl-form" action="https://formspree.io/dalal.fahmi@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Nouvelle inscription — Newsletter Neybras Magazine"/>
+      <input type="hidden" name="_language" value="fr"/>
+      <input type="hidden" name="_next" value="https://www.neybras-magazine.com/newsletter.html?merci=1"/>
+      <input type="email" name="email" placeholder="Votre email professionnel" required aria-label="Email"/>
+      <button type="submit">S'abonner</button>
+    </form>
+    <p class="note">En vous abonnant, vous acceptez de recevoir notre newsletter. Aucun spam. <a href="politique-confidentialite.html">Politique de confidentialité</a>.</p>
+
+    <div class="benefits">
+      <div class="bitem"><i class="fas fa-balance-scale"></i> Analyses juridiques exclusives (droit des affaires, arbitrage, OHADA)</div>
+      <div class="bitem"><i class="fas fa-chart-line"></i> Décryptages financiers (fiscalité, marchés, finance participative)</div>
+      <div class="bitem"><i class="fas fa-globe-africa"></i> Veille Afrique & Maroc (ZLECAf, jurisprudence, réformes)</div>
+    </div>
   </div>
 </main>
-<footer class="ft">© 2026 Neybras Magazine · Casablanca, Maroc</footer>
+
+<footer class="site-footer">
+  © 2026 Neybras Magazine · Casablanca, Maroc ·
+  <a href="mentions-legales.html" style="color:rgba(255,255,255,.3);margin-left:8px">Mentions légales</a>
+</footer>
+
+<script>
+// Afficher un message de confirmation si ?merci=1 dans l'URL
+if (new URLSearchParams(window.location.search).get('merci') === '1') {
+  document.querySelector('.card').innerHTML =
+    '<div class="pre">Confirmation</div>' +
+    '<h1>Merci pour<br/><em>votre inscription !</em></h1>' +
+    '<p class="sub" style="margin-bottom:36px">Vous recevrez prochainement votre première newsletter. Vérifiez vos spams si vous ne recevez rien sous 24h.</p>' +
+    '<a href="index.html" class="btn-home" style="display:inline-block;border-color:var(--or);color:var(--or);padding:12px 28px">← Retour à l\'accueil</a>';
+}
+</script>
 </body>
 </html>

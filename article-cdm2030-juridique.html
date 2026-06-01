@@ -1270,13 +1270,16 @@ ul { list-style: none; }
         </div>
 
         <!-- Newsletter — version claire -->
-        <div class="nl-w-aside">
+        <form class="nl-w-aside" action="https://formspree.io/dalal.fahmi@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="Nouvelle inscription — Newsletter Neybras Magazine"/>
+          <input type="hidden" name="_language" value="fr"/>
+          <input type="hidden" name="_next" value="https://www.neybras-magazine.com/newsletter.html?merci=1"/>
           <div class="wt">Newsletter hebdomadaire</div>
           <p>Analyses juridiques, décryptages financiers et jurisprudence, chaque lundi.</p>
-          <input type="email" placeholder="Email professionnel"/>
-          <button class="btn-nl">Je m'abonne</button>
+          <input type="email" name="email" placeholder="Email professionnel" required/>
+          <button class="btn-nl" type="submit">Je m'abonne</button>
           <div class="prv">Gratuit · Désinscription immédiate</div>
-        </div>
+        </form>
 
         <!-- Articles liés -->
         <div class="wg">
@@ -1377,7 +1380,10 @@ ul { list-style: none; }
   <div class="nl-pre">Newsletter hebdomadaire</div>
   <h2 class="nl-h">Ne manquez aucune<br/><em>analyse stratégique.</em></h2>
   <p class="nl-sub">Chaque semaine, nos experts sélectionnent les analyses juridiques et financières qui comptent pour les décideurs du Maroc et d'Afrique.</p>
-  <form class="nl-form" action="#" method="POST">
+  <form class="nl-form" action="https://formspree.io/dalal.fahmi@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="Nouvelle inscription — Newsletter Neybras Magazine"/>
+      <input type="hidden" name="_language" value="fr"/>
+      <input type="hidden" name="_next" value="https://www.neybras-magazine.com/newsletter.html?merci=1"/>
     <input type="email" name="email" placeholder="Votre email professionnel" required/>
     <button type="submit">S'abonner</button>
   </form>
@@ -1512,20 +1518,7 @@ function copyLink(btn) {
 document.getElementById('cpBtn').addEventListener('click', e => copyLink(e.currentTarget));
 document.getElementById('cpFloat').addEventListener('click', e => copyLink(e.currentTarget));
 
-/* Newsletter */
-document.querySelectorAll('.btn-nl, .nl-form button').forEach(btn => {
-  btn.addEventListener('click', e => {
-    e.preventDefault();
-    const form = btn.closest('form, .nl-w-aside');
-    const inp  = form && form.querySelector('input[type="email"]');
-    if (inp && inp.value.includes('@')) {
-      const orig = btn.textContent;
-      btn.textContent = '✓ Abonnement confirmé';
-      btn.style.background = '#27ae60';
-      inp.value = '';
-      setTimeout(() => { btn.textContent = orig; btn.style.background = ''; }, 3000);
-    }
-  });
+/* Newsletter : soumission gérée par Formspree */
 });
 </script>
 <script>
