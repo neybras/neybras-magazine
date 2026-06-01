@@ -16,7 +16,7 @@
 <meta name="keywords" content="Coupe du Monde 2030 Maroc juridique, FIFA convention accueil, fiscalité CdM 2030, droits TV football Maroc, droit du sport Maroc"/>
 <meta name="author" content="Me Amine Lahlou"/>
 <meta name="robots" content="index,follow"/>
-<link rel="canonical" href="https://www.neybras-magazine.com/article-cdm2030-juridique"/>
+<link rel="canonical" href="https://www.neybras-magazine.com/article-cdm2030-juridique.html"/>
 <meta property="og:type" content="article"/>
 <meta property="og:title" content="Coupe du Monde 2030 au Maroc : analyse juridique et fiscale — Neybras Magazine"/>
 <meta property="og:description" content="Conventions FIFA, fiscalité spéciale, droits TV et responsabilité des parties prenantes. Analyse exclusive par Me Amine Lahlou."/>
@@ -262,6 +262,13 @@ ul { list-style: none; }
 .am-av {
   width: 30px; height: 30px;
   border-radius: 50%; object-fit: cover;
+  border: 1.5px solid var(--or-bd);
+}
+.am-av-initials {
+  width: 30px; height: 30px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--it); font-size: 11px; font-weight: 700;
+  color: #fff; letter-spacing: .03em; flex-shrink: 0;
   border: 1.5px solid var(--or-bd);
 }
 .am-name { font-weight: 600; color: var(--gris2); font-size: 12px; }
@@ -521,9 +528,12 @@ ul { list-style: none; }
   display: grid; grid-template-columns: 68px 1fr;
   gap: 22px; align-items: start;
 }
-.author-box img {
+.author-box-av {
   width: 68px; height: 68px; border-radius: 50%;
-  object-fit: cover; border: 2px solid var(--or-bd);
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--it); font-size: 20px; font-weight: 700;
+  color: #fff; letter-spacing: .04em; flex-shrink: 0;
+  border: 2px solid var(--or-bd);
 }
 .auth-label {
   font-family: var(--it); font-size: 9px; font-weight: 700;
@@ -1021,7 +1031,7 @@ ul { list-style: none; }
     <!-- Méta — UNE ligne, séparateurs discrets -->
     <div class="art-meta" role="contentinfo">
       <div class="am-author-wrap">
-        <img loading="lazy" src="https://i.pravatar.cc/100?img=11" alt="Me Amine Lahlou" class="am-av"/>
+        <div class="am-av-initials" style="background:#0f1e36;">AL</div>
         <span class="am-name">Me Amine Lahlou</span>
       </div>
       <span class="am-dot">·</span>
@@ -1213,7 +1223,7 @@ ul { list-style: none; }
 
         <!-- Auteur -->
         <div class="author-box">
-          <img src="https://i.pravatar.cc/200?img=11" alt="Me Amine Lahlou"/>
+          <div class="author-box-av" style="background:#0f1e36;">AL</div>
           <div>
             <div class="auth-label">À propos de l'auteur</div>
             <div class="auth-name">Me Amine Lahlou</div>
