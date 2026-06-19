@@ -86,8 +86,14 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://neybras-magazine.com/newsletter.html</loc>
+    <lastmod>2026-05-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
 
-  <!-- Articles â€” Droit du Sport & CdM 2030 -->
+  <!-- Articles — Droit du Sport & CdM 2030 -->
   <url>
     <loc>https://neybras-magazine.com/article-cdm2030-juridique.html</loc>
     <lastmod>2026-06-04</lastmod>
@@ -113,7 +119,7 @@
     <priority>0.8</priority>
   </url>
 
-  <!-- Articles â€” Arbitrage -->
+  <!-- Articles — Arbitrage -->
   <url>
     <loc>https://neybras-magazine.com/article-cirdi.html</loc>
     <lastmod>2026-05-17</lastmod>
@@ -145,7 +151,7 @@
     <priority>0.85</priority>
   </url>
 
-  <!-- Articles â€” Droit & Jurisprudence -->
+  <!-- Articles — Droit & Jurisprudence -->
   <url>
     <loc>https://neybras-magazine.com/article-procedures-collectives.html</loc>
     <lastmod>2026-05-11</lastmod>
@@ -189,7 +195,7 @@
     <priority>0.75</priority>
   </url>
 
-  <!-- Articles â€” Finance -->
+  <!-- Articles — Finance -->
   <url>
     <loc>https://neybras-magazine.com/article-lf2026.html</loc>
     <lastmod>2026-05-16</lastmod>
@@ -233,7 +239,7 @@
     <priority>0.75</priority>
   </url>
 
-  <!-- Articles â€” Afrique & International -->
+  <!-- Articles — Afrique & International -->
   <url>
     <loc>https://neybras-magazine.com/article-zlecaf.html</loc>
     <lastmod>2026-05-15</lastmod>
@@ -277,6 +283,44 @@
     <lastmod>2026-05-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+
+  <!-- Pages manquantes ajoutées -->
+  <url>
+    <loc>https://neybras-magazine.com/fiscalite.html</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://neybras-magazine.com/gouvernance.html</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://neybras-magazine.com/equipe.html</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://neybras-magazine.com/archives.html</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://neybras-magazine.com/politique-confidentialite.html</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://neybras-magazine.com/cookies.html</loc>
+    <lastmod>2026-06-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
 
 </urlset>
