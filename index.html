@@ -705,7 +705,7 @@ ul{list-style:none}
 .inf-sub{font-size:11px;color:rgba(255,255,255,.25);margin-top:5px;font-style:italic;font-family:var(--cg)}
 @media(max-width:680px){.influence-grid{grid-template-columns:repeat(2,1fr)}}
 </style>
-<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+
 </head>
 <body>
 
@@ -1086,12 +1086,10 @@ ul{list-style:none}
       <aside class="sidebar">
 
         <!-- Newsletter -->
-        <form class="nl-w reveal delay-1" action="https://70a45acc.sibforms.com/serve/MUIFALw9HGqo5ByfJY2K8OT0vojkvG1sAJ56A-7J7oS5lU5l61NIgHxjH3j6-yRPDe9lmp7zoqkCAN3AUggLPUxi8ku8fvwGG472N4tc6QCNK5NBkwZUuNOeYkE4KWAWSEancNN46vNpqtNPYS7uEcezDQWxzfSZD1LuPtw8DYYp4Vru4wD94x4tAF-cQ2FVmFyxLfqY1a1SqV8weA==" method="POST" data-type="subscription">
+        <form class="nl-w reveal delay-1" >
           <div class="wt">Newsletter hebdo</div>
           <p>Chaque lundi, les analyses juridiques et financières sélectionnées par nos experts pour les décideurs.</p>
-          <input type="email" name="EMAIL" placeholder="Email professionnel" required/>
-          <input type="text" name="email_address_check" value="" style="display:none">
-          <input type="hidden" name="locale" value="fr">
+          <input type="email" name="email" placeholder="Email professionnel" required/>
           <button class="btn-nl" type="submit">Je m'abonne gratuitement</button>
           <div class="prv">Gratuit · Désinscription en un clic</div>
         </form>
@@ -1619,7 +1617,7 @@ ul{list-style:none}
     <div class="nl-pre reveal">Newsletter Neybras</div>
     <h2 class="nl-h reveal delay-1">Analyses juridiques et financières<br/><em>chaque lundi matin.</em></h2>
     <p class="nl-sub reveal delay-2">Chaque lundi matin, recevez une synthèse des analyses juridiques et financières rédigées par nos experts praticiens.</p>
-    <form class="nl-form reveal delay-3" action="https://70a45acc.sibforms.com/serve/MUIFALw9HGqo5ByfJY2K8OT0vojkvG1sAJ56A-7J7oS5lU5l61NIgHxjH3j6-yRPDe9lmp7zoqkCAN3AUggLPUxi8ku8fvwGG472N4tc6QCNK5NBkwZUuNOeYkE4KWAWSEancNN46vNpqtNPYS7uEcezDQWxzfSZD1LuPtw8DYYp4Vru4wD94x4tAF-cQ2FVmFyxLfqY1a1SqV8weA==" method="POST" data-type="subscription"><input type="email" name="EMAIL" placeholder="Votre email professionnel" required/><input type="text" name="email_address_check" value="" style="display:none"><input type="hidden" name="locale" value="fr">
+    <form class="nl-form reveal delay-3" ><input type="email" name="email" placeholder="Votre email professionnel" required/>
       <button type="submit">S'abonner</button>
     </form>
     <p class="nl-note reveal">520 abonnés · Gratuit · Désinscription immédiate</p>
@@ -1880,10 +1878,8 @@ document.querySelectorAll('.btn-nl').forEach(btn=>{
     </div>
     <h2 style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.85rem;font-weight:600;color:#0f1e36;line-height:1.2;margin-bottom:10px;">Les meilleures analyses juridiques et financières</h2>
     <p style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1rem;font-style:italic;color:#555;line-height:1.65;margin-bottom:22px;">Interviews exclusives, décryptages d'experts et actualité du droit des affaires — chaque semaine dans votre boîte mail.</p>
-    <form id="nl-popup-form" action="https://70a45acc.sibforms.com/serve/MUIFALw9HGqo5ByfJY2K8OT0vojkvG1sAJ56A-7J7oS5lU5l61NIgHxjH3j6-yRPDe9lmp7zoqkCAN3AUggLPUxi8ku8fvwGG472N4tc6QCNK5NBkwZUuNOeYkE4KWAWSEancNN46vNpqtNPYS7uEcezDQWxzfSZD1LuPtw8DYYp4Vru4wD94x4tAF-cQ2FVmFyxLfqY1a1SqV8weA==" method="POST" data-type="subscription" style="display:flex;gap:0;">
-      <input id="nl-popup-email" type="email" name="EMAIL" placeholder="Votre email professionnel" required style="flex:1;padding:11px 14px;border:1px solid #e4e4e4;border-right:none;font-size:13px;font-family:'Inter',sans-serif;outline:none;"/>
-      <input type="text" name="email_address_check" value="" style="display:none">
-      <input type="hidden" name="locale" value="fr">
+    <form id="nl-popup-form"  style="display:flex;gap:0;">
+      <input id="nl-popup-email" type="email" name="email" placeholder="Votre email professionnel" required style="flex:1;padding:11px 14px;border:1px solid #e4e4e4;border-right:none;font-size:13px;font-family:'Inter',sans-serif;outline:none;"/>
       <button type="submit" style="padding:11px 20px;background:#0f1e36;color:#fff;font-family:'Inter',sans-serif;font-size:9.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;border:none;cursor:pointer;white-space:nowrap;">S'abonner</button>
     </form>
     <p style="font-family:'Inter',sans-serif;font-size:9.5px;color:#aaa;margin-top:10px;text-align:center;">520 abonnés · Gratuit · Désinscription en 1 clic</p>
@@ -1901,7 +1897,33 @@ document.querySelectorAll('.btn-nl').forEach(btn=>{
 </script><script>
 (function(){var j=['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'],m=['Janvier','Février','Mars','Avril','Mai','Juin','Juillet','Août','Septembre','Octobre','Novembre','Décembre'],d=new Date(),s=j[d.getDay()]+' '+d.getDate()+' '+m[d.getMonth()]+' '+d.getFullYear();document.querySelectorAll('.tb-date').forEach(function(el){var ic=el.querySelector('i');if(ic){el.innerHTML='';el.appendChild(ic);el.appendChild(document.createTextNode(' '+s));}else{el.textContent=s;}});})();
 </script>
-<script>window.REQUIRED_CODE_ERROR_MESSAGE="Veuillez choisir un code pays";window.LOCALE="fr";window.EMAIL_INVALID_MESSAGE="Les informations que vous avez fournies ne sont pas valides.";window.REQUIRED_ERROR_MESSAGE="Vous devez renseigner ce champ.";window.GENERIC_INVALID_MESSAGE="Les informations que vous avez fournies ne sont pas valides.";var AUTOHIDE=Boolean(0);</script><script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+<script>
+(function(){
+  var FS='https://formspree.io/f/mgoppdpg';
+  function attachNl(form){
+    form.addEventListener('submit',async function(e){
+      e.preventDefault();
+      var inp=form.querySelector('input[type="email"]');
+      var btn=form.querySelector('button[type="submit"],input[type="submit"]');
+      var email=inp?inp.value.trim():'';
+      if(!email||!email.includes('@'))return;
+      if(btn){btn.textContent='Envoi…';btn.disabled=true;}
+      try{
+        var res=await fetch(FS,{method:'POST',headers:{'Content-Type':'application/json','Accept':'application/json'},body:JSON.stringify({email:email,_subject:'Nouvelle inscription — Newsletter Neybras Magazine'})});
+        var data=await res.json().catch(function(){return{};});
+        if(res.ok&&data.ok){
+          form.innerHTML='<p style="color:#b8922e;font-size:13px;padding:6px 0">✓ Merci ! Vérifiez votre boîte mail.</p>';
+        }else{
+          if(btn){btn.textContent="S'abonner";btn.disabled=false;}
+        }
+      }catch(err){
+        if(btn){btn.textContent="S'abonner";btn.disabled=false;}
+      }
+    });
+  }
+  document.querySelectorAll('.nl-form,.nl-w,#nl-popup-form').forEach(attachNl);
+})();
+</script>
 </body>
 </html>
 
