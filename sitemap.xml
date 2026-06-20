@@ -121,6 +121,12 @@
 
   <!-- Articles — Arbitrage -->
   <url>
+    <loc>https://neybras-magazine.com/article-arbitrage-mondial2030-entretien</loc>
+    <lastmod>2026-06-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://neybras-magazine.com/article-cirdi</loc>
     <lastmod>2026-05-17</lastmod>
     <changefreq>monthly</changefreq>
