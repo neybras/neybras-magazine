@@ -1,0 +1,37 @@
+/* ============================================================
+   Neybras Magazine — Header de référence (identité unique)
+   Chargé en dernier sur toutes les pages : fige le style du
+   header/nav pour une identité visuelle identique partout.
+   Couleurs : navy #0E3D52 · or #B8965A
+   ============================================================ */
+
+.site-header{background:#0E3D52 !important;position:sticky;top:0;z-index:1000;border-bottom:1px solid rgba(201,168,76,.18);}
+.site-header .container{max-width:1240px;margin:0 auto;padding:0 32px;}
+.site-header .hd-in{display:flex;align-items:center;justify-content:space-between;padding:13px 0;}
+
+.site-header .logo-wrap{display:flex;align-items:center;gap:13px;text-decoration:none;}
+.site-header .logo-mark{width:54px;height:54px;flex-shrink:0;display:block;}
+.site-header .logo-txt{display:flex;flex-direction:column;}
+.site-header .logo-name{font-family:'Inter','Helvetica Neue',sans-serif;font-size:18px;font-weight:700;letter-spacing:.2em;color:#ffffff;text-transform:uppercase;line-height:1;}
+.site-header .logo-tag{font-family:'Cormorant Garamond','Georgia',serif;font-style:italic;font-size:11px;color:#B8965A;letter-spacing:.06em;margin-top:3px;}
+
+.site-header .hd-act{display:flex;align-items:center;gap:22px;}
+.site-header .btn-srch{background:none;border:none;color:rgba(255,255,255,.45);font-size:15px;cursor:pointer;padding:6px;transition:color .2s ease;line-height:1;}
+.site-header .btn-srch:hover{color:#ffffff;}
+.site-header .btn-abo{background:#B8965A;color:#0E3D52;font-family:'Inter','Helvetica Neue',sans-serif;font-size:9.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:10px 22px;border-radius:2px;border:none;cursor:pointer;white-space:nowrap;transition:background .2s ease;}
+.site-header .btn-abo:hover{background:#CCA96E;color:#0E3D52;}
+
+/* Barre de navigation — style harmonisé */
+.main-nav{background:#0E3D52 !important;border-bottom:2px solid #B8965A;}
+.main-nav .container{max-width:1240px;margin:0 auto;padding:0 32px;}
+.main-nav .nav-in{display:flex;overflow-x:auto;scrollbar-width:none;}
+.main-nav .nav-in::-webkit-scrollbar{display:none;}
+.main-nav .nav-a{display:block;font-family:'Inter','Helvetica Neue',sans-serif;font-size:10px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:rgba(255,255,255,.5);padding:12px 16px;white-space:nowrap;border-bottom:2px solid transparent;margin-bottom:-2px;transition:all .2s ease;}
+.main-nav .nav-a:hover,.main-nav .nav-a.on{color:#B8965A;border-bottom-color:#B8965A;}
+.main-nav .nav-a.star{color:#CCA96E;}
+
+@media(max-width:600px){
+  .site-header .container,.main-nav .container{padding:0 18px;}
+  .site-header .logo-name{font-size:15px;}
+  .site-header .logo-mark{width:46px;height:46px;}
+}
